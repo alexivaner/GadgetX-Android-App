@@ -1,0 +1,78 @@
+package id.ac.petra.gadgetx;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+public class smartphone_pilih extends AppCompatActivity {
+    private static final String TAG = "smartphone_pilih";
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.smartphone_pilih);
+        Log.d(TAG, "onCreate: started. ");
+
+        Bundle bundle = getIntent().getExtras();
+
+        //pass data ke variabel string
+        String name = bundle.getString("Name");
+        new MainActivity.SendMsg().execute("user melakukan tap pada :" +name);
+        String status = bundle.getString("Status");
+        String network = bundle.getString("Network");
+        String img = bundle.getString("Image");
+        String dim = bundle.getString("Dimension");
+        String disty = bundle.getString("Display Type");
+        String disz = bundle.getString("Display Size");
+        String cpu = bundle.getString("CPU");
+        String os = bundle.getString("OS");
+        String memory = bundle.getString("Memory");
+        String camera = bundle.getString("Camera");
+        String battery = bundle.getString("Battery");
+        String brand = bundle.getString("Brand");
+
+        //assign xml object ke textview
+        TextView textView1 = findViewById(R.id.smartphone_title);
+        TextView textView2 = findViewById(R.id.brand);
+        TextView textView3 = findViewById(R.id.smartphone_desc);
+        TextView textView4 = findViewById(R.id.smartphone_network);
+        TextView textView5 = findViewById(R.id.smartphone_dim);
+        TextView textView6 = findViewById(R.id.smartphone_disty);
+        TextView textView7 = findViewById(R.id.smartphone_disz);
+        TextView textView8 = findViewById(R.id.cpu);
+        TextView textView9 = findViewById(R.id.os);
+        TextView textView10 = findViewById(R.id.memory);
+        TextView textView11 = findViewById(R.id.camera);
+        TextView textView12 = findViewById(R.id.batt);
+        ImageView imageView = findViewById(R.id.img_cover);
+
+        textView1.setText(name);
+        textView2.setText(brand);
+        textView3.setText(status);
+        textView4.setText(network);
+        textView5.setText(dim);
+        textView6.setText("Dispay Type : "+disty);
+        textView7.setText("Display Size : "+disz);
+        textView8.setText("CPU : "+cpu);
+        textView9.setText("OS : "+os);
+        textView10.setText("Memory : "+memory);
+        textView11.setText("Camera : "+camera);
+        textView12.setText("Battery : "+battery);
+
+        Glide.with(this)
+                .load(img).thumbnail(0.5f).crossFade()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(imageView);
+    }
+
+
+}

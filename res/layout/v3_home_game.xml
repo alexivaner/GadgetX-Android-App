@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nirhart.parallaxscroll.views.ParallaxScrollView android:orientation="vertical" android:id="@id/sv_root" android:background="@color/md_grey_300" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:parallax_factor="1.9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/rl_head_banner" android:background="@color/md_grey_400" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:orientation="vertical" android:id="@id/img_head_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_campaign_text" android:background="@drawable/gradient_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_doodle_action" android:layout_centerVertical="true">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/txt_doodle_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="InPonsel" android:lines="1" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ffe0e0e0" android:ellipsize="end" android:id="@id/txt_doodle_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="The Largest Indonesia mobile " android:maxLines="2" />
+                    </LinearLayout>
+                    <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff57c00" android:gravity="center" android:id="@id/btn_doodle_action" android:background="@null" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INSTALL" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:layout_gravity="center" android:id="@id/img_doodle_arrow" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:background="@color/md_grey_300" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

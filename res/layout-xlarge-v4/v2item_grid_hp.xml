@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_master_item" android:background="@drawable/card_anim" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/myroot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/mainLayout" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/headImage" android:layout_width="85.0dip" android:layout_height="85.0dip">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_item" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                <ImageView android:layout_gravity="center" android:id="@id/imgHp" android:visibility="gone" android:layout_width="85.0dip" android:layout_height="85.0dip" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="20.0sp" android:textColor="#95000000" android:id="@id/list_txtMerek" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Samsung " />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffcacaca" android:id="@id/list_txtHarga" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5000000" android:layout_below="@id/list_txtMerek" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffaaaaaa" android:id="@id/list_txtCodename" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Codename" android:layout_below="@id/list_txtMerek" />
+                    <TextView android:textSize="46.0sp" android:textColor="#10000000" android:id="@id/list_txtBigRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/txtHits" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(100)" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:id="@id/bottom_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_like" android:background="@drawable/anim_item_list" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+            <ImageView android:id="@id/list_like" android:background="@drawable/like" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/list_text_like" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#75343434" android:id="@id/list_text_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_dislike" android:background="@drawable/anim_item_list" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+            <ImageView android:id="@id/list_dislike" android:background="@drawable/dislike" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/list_text_dislike" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#75343434" android:id="@id/list_text_dislike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_kom" android:background="@drawable/anim_item_list" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+            <ImageView android:id="@id/list_komentar" android:background="@drawable/komentar_bottom" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="3.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/list_text_komentar" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#75343434" android:id="@id/list_text_komentar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

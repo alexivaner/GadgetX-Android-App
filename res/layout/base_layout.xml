@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/drawer_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v4.widget.DrawerLayout android:orientation="vertical" android:id="@id/mydrawer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/left_drawer" android:background="#fffb9a31" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/v2_drawer_menu" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

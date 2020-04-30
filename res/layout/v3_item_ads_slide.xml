@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_root_ads" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <ImageView android:gravity="center" android:id="@id/img_cover_ads" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/image_desc" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/anim_item_list_trans2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:id="@id/btn_head_banner_refresh" android:background="@drawable/ic_refresh_grey600_36dp" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+        <com.inponsel.android.widget.CircleProgressBar android:id="@id/circle_progress_doodle" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true" app:progress="0" app:progressbarColor="@color/md_green_300" app:progressBarThickness="4.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_backdesc_color" android:background="#b3757575" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/img_icon_ads" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_action_ads" android:layout_toRightOf="@id/img_icon_ads" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/txt_title_ads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="InPonsel" android:lines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffe0e0e0" android:ellipsize="end" android:id="@id/txt_campaign_ads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Largest Indonesia mobile " android:maxLines="2" />
+            </LinearLayout>
+            <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff57c00" android:gravity="center" android:id="@id/btn_action_ads" android:background="@null" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INSTALL" android:layout_toLeftOf="@id/img_arrow_ads" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center" android:id="@id/img_arrow_ads" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <RatingBar android:id="@id/rbar_ads" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stepSize="0.1" android:isIndicator="true" style="@style/RatingBarSmallAppTheme" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/txt_social_ads" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

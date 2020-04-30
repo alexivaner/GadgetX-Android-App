@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_empty" android:background="#ffdddddd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+        <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no data found" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrolView" android:background="@color/md_white_1000" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/myroot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:id="@id/imgItem" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/progressbar_item" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/imgLogoPT" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/md_white_1000" android:gravity="center_horizontal" android:id="@id/txt_pt_NAMA" android:background="@color/md_deep_orange_500" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_DESC" android:background="@color/md_deep_orange_500" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_white_1000" android:id="@id/txt_pt_desc" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_ALAMAT" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ALAMAT" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:id="@id/txt_pt_almt" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_CONTACT_center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="CONTACT CENTER" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_cont_center" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_EMAIL" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="EMAIL" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:autoLink="email" android:linksClickable="true" android:id="@id/txt_pt_email" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_WEB" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="WEB" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:autoLink="web" android:linksClickable="true" android:id="@id/txt_pt_web" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_TWITTER" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="TWITTER" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_pt_twitter" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_FACEBOOK" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="FACEBOOK" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_pt_fb" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_YOUTUBE" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="YOUTUBE" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_pt_ytube" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_PT_BERBAGI" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Pernah kesini? Bagi pengalaman anda disini" />
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+                                <RatingBar android:layout_gravity="center" android:id="@id/ratingBarSC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:numStars="5" android:stepSize="1.0" style="@style/foodRatingBarBig" />
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@drawable/text_click_revert" android:gravity="center" android:id="@id/txtAddRateSC" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="SUBMIT" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/lay_PT_MyKom" android:background="@drawable/card_anim" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="top|center" android:id="@id/imgUserKiri" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                    <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_itemMykom" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                                    <ImageView android:id="@id/img_Mykom_picture" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgUserKiri">
+                                    <RelativeLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff131313" android:id="@id/txtMyUsername" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama" />
+                                        <RatingBar android:id="@id/ratingMyBar1" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:isIndicator="true" android:layout_below="@id/txtMyUsername" style="@style/RatingBarSmallAppTheme" />
+                                        <TextView android:textSize="12.0sp" android:textColor="#ff131313" android:id="@id/txtMyWaktu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="Waktu" android:layout_alignParentRight="true" />
+                                    </RelativeLayout>
+                                    <com.inponsel.android.widget.TextViewFixTouchConsume android:textSize="14.0sp" android:textColor="@color/text_color" android:linksClickable="false" android:id="@id/txtMyKomentar" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pesan" android:textIsSelectable="false" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="2.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="#ffe27431" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff4f4e4f" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Menemukan kesalahan? Koreksi disini," />
+                        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <EditText android:textSize="13.0sp" android:gravity="top|left|center" android:id="@id/edtKoreksiUserSC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:hint="Ketik koreksi disini" android:maxLines="3" android:lines="3" android:capitalize="sentences" android:layout_weight="0.3" />
+                            <Button android:textColor="@drawable/text_click_revert" android:layout_gravity="center_vertical" android:id="@id/btnKirimErrorSC" android:background="@drawable/button_click" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:text="Kirim" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

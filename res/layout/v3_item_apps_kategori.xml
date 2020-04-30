@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_like_apps" android:background="@drawable/anim_item_list_trans" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="#75343434" android:id="@id/txt_id_applist" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="1000" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#75343434" android:id="@id/txt_like_kat_apps_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="1000" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_like_apps_1" android:background="@drawable/like" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/txt_like_kat_apps_1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_rootpil_1" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/rl_pil_1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true">
+            <com.inponsel.android.widget.CircleView android:id="@id/custView" android:layout_width="40.0dip" android:layout_height="40.0dip" circleview:circleColor="@color/md_amber_100" circleview:circleLabel="" circleview:labelColor="#ffffff66"
+              xmlns:circleview="http://schemas.android.com/apk/res/com.inponsel.android" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/txt_no_apps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_700" android:id="@id/txt_sub_kat_apps_1" android:paddingLeft="5.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Internetan dengan browser pilihan terbaik" android:layout_below="@id/txt_kat_apps_1" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff212121" android:ellipsize="end" android:id="@id/txt_kat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Photo selfie" android:layout_toRightOf="@id/rl_pil_1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

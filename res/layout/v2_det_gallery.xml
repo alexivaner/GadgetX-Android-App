@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/newappsBackground" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/myroot" android:background="@color/newappsBackground" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.inponsel.android.utils.ExpandedGridView android:gravity="center" android:layout_gravity="center" android:id="@id/gridviewGallery" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:scrollingCache="true" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:numColumns="auto_fit" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+            <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <Button android:id="@id/btnRefresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refresh" style="@style/ButtonAppTheme" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

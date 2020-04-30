@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/myroot" android:background="@drawable/bg_trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.2">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/card_style" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="left" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/komentar" />
+            <EditText android:id="@id/edtUser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:hint="Your name" android:capitalize="sentences" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lineColor" android:background="@color/headNameGreen" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" />
+            <com.inponsel.android.widget.DroidWriterEditText android:gravity="top" android:id="@id/edtComment" android:background="#fff7f7f7" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="Isi komentar disini..." android:lines="4" android:maxLength="512" android:capitalize="sentences" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/txtCountKomen" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:text="512" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btnBatal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Batal" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+                <Button android:enabled="false" android:id="@id/btnSubmit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kirim" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

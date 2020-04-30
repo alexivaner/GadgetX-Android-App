@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mydrawer" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scrolView" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_imgTLContent" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                <RelativeLayout android:background="#aacacaca" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:id="@id/txtbencTitle" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pengujian ini menggunakan Antutu" />
+                </RelativeLayout>
+                <com.inponsel.android.utils.HtmlTextView android:textSize="14.0sp" android:textColor="#ff4f4e4f" android:id="@id/txt_tl_content" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_tl" android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/imageAvatar" android:padding="1.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/md_brown_500" android:id="@id/txttlSumber" android:background="@null" android:paddingTop="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Memuat..." android:layout_toRightOf="@id/imageAvatar" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/md_brown_500" android:id="@id/txttlTanggal" android:background="@null" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                            <TextView android:textSize="20.0sp" android:textColor="@color/md_brown_500" android:autoLink="web" android:id="@id/txt_tl_title" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/imageAvatar" />
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtbencSkor" android:background="@drawable/background_bencmark" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120000" android:layout_below="@id/txt_tl_title" />
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/md_grey_700" android:id="@id/txthasilfotoTitle" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/txt_tl_title" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <WebView android:id="@id/web_tl_srclink" android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4f4e4f" android:autoLink="web" android:id="@id/txt_tl_srclink" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_above="@id/separator" />
+            <TextView android:textSize="10.0sp" android:textStyle="italic" android:textColor="#ff4f4e4f" android:autoLink="web" android:id="@id/txt_tl_note" android:background="@android:color/white" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@id/bottom_list" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_like" android:background="@drawable/anim_item_list" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                    <ImageView android:id="@id/list_img_like" android:background="@drawable/love_orange_garis" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="3.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="#75343434" android:id="@id/txtLikeKom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:layout_toRightOf="@id/list_img_like" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_favorite" android:background="@drawable/anim_item_list" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                    <ImageView android:id="@id/list_img_favorite" android:background="@drawable/star_orange" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="#75343434" android:id="@id/txtfavoriteKom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_toRightOf="@id/list_img_favorite" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_share" android:background="@drawable/anim_item_list" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                    <ImageView android:background="@android:drawable/ic_menu_share" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" />
+                    <TextView android:textSize="12.0sp" android:textColor="#75343434" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_flag" android:background="@drawable/anim_item_list" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                    <ImageView android:id="@id/img_flag" android:background="@drawable/flag_biru_garis" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" />
+                    <TextView android:textSize="12.0sp" android:textColor="#75343434" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_edit" android:background="@drawable/anim_item_list" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                    <ImageView android:id="@id/img_edit_content" android:background="@drawable/edit_orange" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" />
+                    <TextView android:textSize="12.0sp" android:textColor="#75343434" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/rlLabelKomentar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:id="@id/txtLabelKomentar" android:paddingLeft="13.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Komentar" android:layout_centerVertical="true" />
+                    <ProgressBar android:id="@id/progressbar_komen" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlLabelKomentar" />
+                <Button android:gravity="center" android:id="@id/btn_komenlain" android:background="@drawable/card_anim_ikh" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Komentar lain..." android:layout_above="@id/linear_listview" />
+                <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar_comment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/linear_listview" android:layout_alignParentBottom="true">
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_pop_komen" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_emot" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <Button android:id="@id/btn_pop_emot" android:background="@drawable/emot_anim" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lay_button_send">
+                            <com.inponsel.android.widget.DroidWriterEditText android:id="@id/edt_pop_komen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="4" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:id="@id/pop_txtCountKomen" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="512" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_send" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <Button android:enabled="false" android:id="@id/btn_send_komen" android:background="@drawable/send_anim" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="1.0dip" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <Button android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/btn_pop_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Untuk memberikan komentar silahkan login terlebih dulu" android:singleLine="true" style="@style/ButtonAppTheme" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/txt_empty_komen" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Belum ada komentar" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_empty" android:background="@color/newappsBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+        <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

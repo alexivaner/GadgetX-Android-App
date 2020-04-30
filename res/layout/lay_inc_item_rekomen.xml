@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mycard" android:background="@color/md_grey_200" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/anim_item_trans" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:padding="5.0dip" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lay_Rating">
+                <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                    <RelativeLayout android:id="@id/headImage" android:layout_width="100.0dip" android:layout_height="100.0dip">
+                        <ImageView android:id="@id/imgHp" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                        <ProgressBar android:id="@id/progressbar_item" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/headImage">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_900" android:ellipsize="marquee" android:id="@id/list_txtMerek" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Samsung" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff424242" android:id="@id/list_txtHarga" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="50000005000000500000050000005000000" android:layout_below="@id/list_txtMerek" />
+                        <RatingBar android:id="@id/ratingDirekomen" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="10" android:numStars="10" android:stepSize="0.1" android:isIndicator="true" android:layout_below="@id/list_txtHarga" style="@style/RatingBarSmallAppTheme" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:id="@id/list_txtCodename" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Codename" android:layout_below="@id/list_txtMerek" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/separator" android:background="#ff424242" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="5.0dip" />
+                    <LinearLayout android:id="@id/bottom_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/separator">
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_like" android:background="@drawable/anim_item_list_trans" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                            <ImageView android:id="@id/list_like" android:background="@drawable/like" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/list_text_like" android:layout_centerVertical="true" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff424242" android:id="@id/list_text_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_dislike" android:background="@drawable/anim_item_list_trans" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+                            <ImageView android:id="@id/list_dislike" android:background="@drawable/dislike" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/list_text_dislike" android:layout_centerVertical="true" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff424242" android:id="@id/list_text_dislike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_lay_kom" android:background="@drawable/anim_item_list_trans" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+                            <ImageView android:id="@id/list_komentar" android:background="@drawable/komentar_bottom" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/list_text_komentar" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff424242" android:id="@id/list_text_komentar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="3.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtTitleReco1" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kenapa Nokia Lumia 1520?" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff424242" android:id="@id/txtTitleReco2" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Telusuri fitur, pendapat pengunjung, pengguna dan isu-isu terbaru dibelakangnya " android:layout_below="@id/txtTitleReco1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/lay_Rating" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="24.0sp" android:textColor="#ff424242" android:gravity="center" android:id="@id/list_txtBigRight" android:background="#ff64dd17" android:paddingLeft="5.0dip" android:paddingTop="20.0dip" android:paddingRight="5.0dip" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999k" android:maxLength="4" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

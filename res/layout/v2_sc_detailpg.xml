@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrolView" android:background="@color/newappsBackground" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/myroot" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@id/imgItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <ProgressBar android:id="@id/progressbar_item" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imgSC" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:gravity="center_horizontal" android:id="@id/txt_SC_NAMA" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ALAMAT" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_ALAMAT" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ALAMAT" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_sc_almt" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="BlackBerry Lifestyle Store North Skywalk Lt II no. 205B Pondok Indah Mall II Jakarta Selatan, Jakarta" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_JAM_OPERASIONAL" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="JAM OPERASIONAL" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:id="@id/txt_jam_opr" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_TELEPON" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="TELEPON LOKAL" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_sc_telp" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="021-546878" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_CONTACT_center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="CONTACT CENTER" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_cont_center" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_EMAIL" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="EMAIL" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:autoLink="email" android:linksClickable="true" android:id="@id/txt_sc_email" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_WEB" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="WEB" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:autoLink="web" android:linksClickable="true" android:id="@id/txt_sc_web" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_TWITTER" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="TWITTER" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_sc_twitter" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_FACEBOOK" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="FACEBOOK" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_sc_fb" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_YOUTUBE" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="YOUTUBE" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:textColorLink="@color/md_grey_800" android:id="@id/txt_sc_ytube" android:background="@android:color/white" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-" android:layout_weight="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_PENGALAMAN" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <RelativeLayout android:id="@id/rlLabelKomentar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:gravity="center_horizontal" android:id="@id/txtLabelKomentar" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Komentar" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ProgressBar android:id="@id/progressbar_komen" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_below="@id/rlLabelKomentar" android:layout_centerHorizontal="true" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlLabelKomentar" />
+                    <Button android:gravity="center" android:id="@id/btn_komenlain" android:background="@drawable/card_anim_ikh" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Komentar lain..." android:layout_below="@id/linear_listview" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/txt_empty_komen" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Belum ada komentar" />
+                <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar_comment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_pop_komen" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <RelativeLayout android:id="@id/lay_button_emot" android:background="@android:drawable/list_selector_background" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true">
+                            <Button android:id="@id/btn_pop_emot" android:background="@drawable/emot_anim" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                            <Button android:id="@id/btn_komen_pic" android:background="@drawable/add_pic" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lay_button_send" android:layout_toRightOf="@id/lay_button_emot">
+                            <com.inponsel.android.widget.DroidWriterEditText android:id="@id/edt_pop_komen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="4" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:id="@id/pop_txtCountKomen" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="512" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_send" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <Button android:enabled="false" android:id="@id/btn_send_komen" android:background="@drawable/send_anim" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="1.0dip" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <Button android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/btn_pop_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Untuk memberikan komentar silahkan login terlebih dulu" android:singleLine="true" style="@style/ButtonAppTheme" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lay_SC_RATING" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:background="#ff959595" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Nilai" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="50.0sp" android:textColor="#ff959595" android:gravity="center" android:id="@id/txt_avgRate" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="4.9" />
+                        <RatingBar android:layout_gravity="center" android:id="@id/ratingBarAVG" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:isIndicator="true" style="@style/foodRatingBarSmall" />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff959595" android:gravity="center" android:id="@id/txt_rateby" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="10 suara" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 Bintang" />
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ProgressBar android:id="@id/rating5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="90" android:progressDrawable="@drawable/greyprogress" android:layout_toLeftOf="@id/rata5s" style="?android:attr/progressBarStyleHorizontal" />
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/rata5s" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 Bintang" />
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ProgressBar android:id="@id/rating4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/greyprogress" android:layout_toLeftOf="@id/rata4s" style="?android:attr/progressBarStyleHorizontal" />
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/rata4s" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 Bintang" />
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ProgressBar android:id="@id/rating3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/greyprogress" android:layout_toLeftOf="@id/rata3s" style="?android:attr/progressBarStyleHorizontal" />
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/rata3s" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 Bintang" />
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ProgressBar android:id="@id/rating2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/greyprogress" android:layout_toLeftOf="@id/rata2s" style="?android:attr/progressBarStyleHorizontal" />
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/rata2s" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 Bintang" />
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ProgressBar android:id="@id/rating1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/greyprogress" android:layout_toLeftOf="@id/rata1s" style="?android:attr/progressBarStyleHorizontal" />
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/rata1s" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_SC_BERBAGI" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Pernah kesini? Bagi pengalaman anda disini" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+                            <RatingBar android:layout_gravity="center" android:id="@id/ratingBarSC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:numStars="5" android:stepSize="1.0" style="@style/foodRatingBarBig" />
+                        </LinearLayout>
+                        <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@drawable/text_click_revert" android:gravity="center" android:id="@id/txtAddRateSC" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="SUBMIT" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/lay_SC_MyKom" android:background="@drawable/card_anim" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="top|center" android:id="@id/imgUserKiri" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_item_komen" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                                <ImageView android:id="@id/img_Mykom_picture" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgUserKiri">
+                                <RelativeLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff131313" android:id="@id/txtMyUsername" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama" />
+                                    <RatingBar android:id="@id/ratingMyBar1" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:isIndicator="true" android:layout_below="@id/txtMyUsername" style="@style/RatingBarSmallAppTheme" />
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff131313" android:id="@id/txtMyWaktu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="Waktu" android:layout_alignParentRight="true" />
+                                </RelativeLayout>
+                                <com.inponsel.android.widget.TextViewFixTouchConsume android:textSize="14.0sp" android:textColor="@color/text_color" android:linksClickable="false" android:id="@id/txtMyKomentar" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pesan" android:textIsSelectable="false" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:background="#ffd8d7d7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/md_deep_orange_500" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Menemukan kesalahan? Koreksi disini," />
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="13.0sp" android:gravity="top|left|center" android:id="@id/edtKoreksiUserSC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:hint="Ketik koreksi disini" android:maxLines="3" android:lines="3" android:capitalize="sentences" android:layout_weight="0.3" />
+                    <Button android:textColor="@drawable/text_click_revert" android:layout_gravity="center_vertical" android:id="@id/btnKirimErrorSC" android:background="@drawable/anim_deep_orange" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:text="Kirim" android:layout_weight="0.7" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

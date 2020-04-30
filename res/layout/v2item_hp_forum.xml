@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/headHp" android:background="@drawable/anim_item_list_trans" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_head" android:layout_width="35.0dip" android:layout_height="35.0dip" android:rotation="0.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/headImage" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <ProgressBar android:id="@id/progressbar_item" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:id="@id/imgHp" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="fitCenter" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/txt_NotifHp" android:layout_toRightOf="@id/rl_head">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/list_txtMerek" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="InPonsel R1 " />
+                <TextView android:textSize="10.0sp" android:textColor="#ffaaaaaa" android:id="@id/list_txtHarga" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5000000" android:layout_below="@id/list_txtMerek" />
+                <TextView android:textSize="12.0sp" android:textColor="#80ffffff" android:id="@id/list_txtCodename" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Codename" android:layout_below="@id/list_txtMerek" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="@color/md_brown_500" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_NotifHp" android:background="@color/md_white_1000" android:layout_width="50.0dip" android:layout_height="20.0dip" android:text="Hapus" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

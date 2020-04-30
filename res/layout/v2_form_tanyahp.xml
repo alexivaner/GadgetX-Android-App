@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progbar_form_tanya" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/GNowProgressBar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/md_grey_700" android:id="@id/txtLabel_artikel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+                <ImageView android:id="@id/imgAskHp" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/add_pic" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/md_grey_700" android:id="@id/txtLabelWajib" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/imgAskHp" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/md_grey_700" android:id="@id/txtKategori" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" />
+            <EditText android:id="@id/edtJudulAskHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="Judul*" android:maxLines="2" android:inputType="textPersonName|textMultiLine" style="@style/EditTextAppTheme" />
+            <EditText android:gravity="top" android:id="@id/edtPertanyaan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Pertanyaan*" android:minLines="5" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+            <RadioGroup android:id="@id/rgPilTagArtikel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Kategori*" />
+                <RadioButton android:id="@id/rbUmum" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Topik umum" />
+                <RadioButton android:id="@id/rbApp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aplikasi" />
+                <RadioButton android:id="@id/rbGames" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Games" />
+                <RadioButton android:id="@id/rbTips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tips Trik" />
+                <RadioButton android:id="@id/rbOSFirm" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OS / Firmware" />
+                <RadioButton android:id="@id/rbHack" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hack" />
+                <RadioButton android:id="@id/rbAksesoris" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aksesori" />
+            </RadioGroup>
+            <TextView android:textColor="@color/md_grey_700" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="*Wajib diisi" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:enabled="false" android:id="@id/btnSaveAskHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Save Draft" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+                <Button android:enabled="false" android:id="@id/btnPostAskHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Submit" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+                <Button android:enabled="false" android:id="@id/btnUpdateAskHp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Update" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:background="#00181818" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linimage" android:background="#001c3740" android:layout_width="50.0dip" android:layout_height="50.0dip">
+        <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/linimage">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/txtNotifTitle" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:marqueeRepeatLimit="marquee_forever" />
+        <RelativeLayout android:background="#ff181818" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/txtNotifMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/already_registered" android:layout_toLeftOf="@id/imageApps" android:layout_below="@id/txtNotifTitle" />
+            <ImageView android:id="@id/imageApps" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/ic_launcher" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

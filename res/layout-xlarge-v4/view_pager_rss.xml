@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="left|center" android:id="@id/btnTes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pilih rentang harga" style="@style/ButtonAppTheme" />
+        <com.astuetz.PagerSlidingTabStrip android:id="@id/tabs" android:background="@drawable/background_tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pagerHeight" android:fillViewport="true" app:pstsShouldExpand="true" />
+        <HorizontalScrollView android:id="@id/hsv_viewpager" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="12.0sp" android:textColor="@color/md_deep_orange_500" android:ellipsize="marquee" android:id="@id/btnKATEGORI" android:background="@drawable/button_white_orange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="2.5dip" android:text="KATEGORI" android:singleLine="true" android:layout_weight="0.5" android:marqueeRepeatLimit="marquee_forever" />
+                <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/btnTERBARU" android:background="@drawable/button_orange_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:text="TERBARU" android:singleLine="true" android:layout_weight="0.5" android:marqueeRepeatLimit="marquee_forever" />
+                <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/btnTERPOPULER" android:background="@drawable/button_orange_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:text="TERPOPULER" android:singleLine="true" android:layout_weight="0.5" android:marqueeRepeatLimit="marquee_forever" />
+                <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/btnTERKOMENTARI" android:background="@drawable/button_orange_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:text="TERKOMENTARI" android:singleLine="true" android:layout_weight="0.5" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

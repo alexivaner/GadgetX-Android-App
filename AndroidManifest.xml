@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.inponsel.android" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.inponsel.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.software.live_wallpaper" android:required="false"/>
+    <uses-feature android:name="android.hardware.audio.low_latency" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.barometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.compass" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.proximity" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.type.television" android:required="false"/>
+    <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.software.sip" android:required="false"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.inponsel.android.adapter.PonselBaseApp" android:theme="@style/Theme.Sherlock.CustomLight">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="6.56867E14"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:screenOrientation="portrait"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.SplashScreen" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCfDvsV3MNXOIAs1F0aSSbxUd83P-wS21I"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="com.inponsel.android.DownloadService"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.InboxMessageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomShareLocationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ScrollViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TranslucentActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomInfoChat" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.MessageLocationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.MessageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" android:name="com.google.ads.AdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.TentangActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.PengaturanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KomentarAktivitasUser" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KomentarPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ProfileOtherUser" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KomentarBaruLainNews" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.AktivitasLainPonselUser" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KomentarBaruLainPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KomentarHpNews" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RSSFeed" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rsstab.RSSTabMenu" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rsstab.RSSTimelineActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rsstab.RSSInteraksiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.globalforum.ForumTabMenu" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.globalforum.ForumGlobalActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.conversation.ConversationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.conversation.ConversationDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.conversation.ConversationInteraksiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.conversation.ConversationPost" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.globalforum.ForumInteraksiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.globalforum.PostGlobalForum" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.tlforum.TLTabMenu" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.tlforum.ForumHPActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.tlforum.InteraksiForumHP" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RSSFeedByTag" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.timelinedetail.Hal1TLDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TranslucentActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="inponsel.com" android:pathPrefix="/forum/" android:scheme="http"/>
+                <data android:host="www.inponsel.com" android:pathPrefix="/forum/" android:scheme="http"/>
+                <data android:host="inponsel.co.id" android:pathPrefix="/forum/" android:scheme="http"/>
+                <data android:host="www.inponsel.co.id" android:pathPrefix="/forum/" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.timelinedetail.TLDetailTab" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.timelinedetail.TLKomenTab" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rssfeeddetail.RSSDetailTab" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="inponsel.com" android:pathPrefix="/news/" android:scheme="http"/>
+                <data android:host="www.inponsel.com" android:pathPrefix="/news/" android:scheme="http"/>
+                <data android:host="www.inponsel.com" android:pathPrefix="/berita/d/" android:scheme="http"/>
+                <data android:host="inponsel.com" android:pathPrefix="/berita/d/" android:scheme="http"/>
+                <data android:host="inponsel.co.id" android:pathPrefix="/news/" android:scheme="http"/>
+                <data android:host="www.inponsel.co.id" android:pathPrefix="/news/" android:scheme="http"/>
+                <data android:host="www.inponsel.co.id" android:pathPrefix="/berita/d/" android:scheme="http"/>
+                <data android:host="inponsel.co.id" android:pathPrefix="/berita/d/" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rssfeeddetail.RSSKomenTab" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rssfeeddetail.Hal1RSSDetail" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rssfeeddetail.Hal2RSSKomen" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.rssfeeddetail.ReplyKomRSSActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.timelinedetail.ReplyKomTLActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KomentarPonsel2" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.SCActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.SCMoreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.servicenter.SCPencarian" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.scdetail.SCDetailPager" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.scdetail.SCKomenPager" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.SCMerkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.AddKomentarPicture" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.SCUserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.SCDetails" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.pencariangen.TabPencarian" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.PersyaratanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HubungiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KebijakanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.NotificationCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeSelengkapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.BookmarkPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.FavoritActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.FavoritPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.FavoritPonselMerek" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.FavoritMerek" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.LanggananBeritaOperator" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.LanggananBeritaAll" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.LanggananBeritaKatSus" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.FavoritArtikelBerita" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.FavoritArtikelForum" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.IkutiForumPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.LanggananBeritaMerek" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.favorit.LanggananBeritaPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v22.UserProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.inponsel.android" android:exported="true" android:name="com.inponsel.android.utils.InternalStorageContentProvider"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.FAQActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ProfilePonselUserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomHPActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomGroupChatListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomHpArtikelTag" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomPenggunaHp" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomPostPertanyaan" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomPostBenchmark" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomPostHasilFoto" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomPostHasilFotoNoCrop" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomMyDraftPost" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.RoomPostArtikel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ImagePagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ImageFullActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.viewpagergallery.ViewPagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ImageFullSingle" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v3.HomeMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeNewMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeNewsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeGadgetActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeAppsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeForumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.HomeGamesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.DetailAppsStore" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.AppsSelengkap" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.AppsByCategory" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.PlaystoreKategoriKomen" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v3.KomentarApplist" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.BaseDrawer" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.NotificationCenterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.home.HomeHubActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.ponseldetails.PonselDetails" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.DetailsPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="inponsel.com" android:pathPrefix="/Spesifikasi/" android:scheme="http"/>
+                <data android:host="www.inponsel.com" android:pathPrefix="/Spesifikasi/" android:scheme="http"/>
+                <data android:host="inponsel.com" android:pathPrefix="/spesifikasi/" android:scheme="http"/>
+                <data android:host="www.inponsel.com" android:pathPrefix="/spesifikasi/" android:scheme="http"/>
+                <data android:host="inponsel.co.id" android:pathPrefix="/Spesifikasi/" android:scheme="http"/>
+                <data android:host="www.inponsel.co.id" android:pathPrefix="/Spesifikasi/" android:scheme="http"/>
+                <data android:host="inponsel.co.id" android:pathPrefix="/spesifikasi/" android:scheme="http"/>
+                <data android:host="www.inponsel.co.id" android:pathPrefix="/spesifikasi/" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.TwitterInPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.TwitterListInPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.ReplyKomTwActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.KomentarTwitter" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.TwitterVendor" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.GalleriFotoHp" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.ProfilPTActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.SCTerdekatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.RivalTerdekatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.PilihPonselBanding" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.Hal1Ikhtisar" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.statistik.StatistikPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.BandingkanSpekHP" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.BandingkanPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.details.Hal3KomentarPull" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.daftarharga.DaftarHargaPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.DaftarHargaPref" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.DaftarHargaHasil" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.daftarharga.Hal1Preference" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.daftarhargaos.DaftarHargaPonselOS" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.PonselRekomendasiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.DaftarPonselOsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.pencarianrinci.PencarianRinciPonsel" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.MerekActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.DaftarPonselMerkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.TurunHargaPonselActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.ReplyFormActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.SCReplyFormActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.KatAppsReplyFormActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.TabPencarian" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.inponsel.android.v2.CariPonselObsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.CustomLight" android:windowSoftInputMode="stateVisible"/>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.inponsel.android"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.inponsel.android.GCMIntentService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/app_name"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider656867024441218" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="38730aaeace68a3c89410be81bd7beddd2edfeab"/>
+    </application>
+</manifest>

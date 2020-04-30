@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/adUnit" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/nativeAdImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/image_desc" />
+        <RelativeLayout android:id="@id/rl_txtad" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="6.5sp" android:textColor="#ffbdbdbd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SPONSORED" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/gradient_transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/nativeAdIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/nativeAdCallToAction" android:layout_toRightOf="@id/nativeAdIcon" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/nativeAdTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="InPonsel" android:lines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffe0e0e0" android:ellipsize="end" android:id="@id/nativeAdBody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Largest Indonesia mobile " android:maxLines="2" />
+            </LinearLayout>
+            <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff57c00" android:gravity="center" android:id="@id/nativeAdCallToAction" android:background="@null" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INSTALL" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center" android:id="@id/arrow" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <RatingBar android:id="@id/nativeAdStarRating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stepSize="0.1" android:isIndicator="true" style="@style/RatingBarSmallAppTheme" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/nativeAdSocialContext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

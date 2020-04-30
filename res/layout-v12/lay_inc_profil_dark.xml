@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/gradient_dark" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="28.0sp" android:typeface="sans" android:textColor="@color/md_deep_orange_500" android:gravity="center_horizontal" android:id="@id/txtHeaderProfile" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Profil" />
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+            <LinearLayout android:orientation="vertical" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="175.0dip" android:layout_margin="5.0dip">
+                    <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_item" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                    <de.hdodenhof.circleimageview.CircleImageView android:id="@id/profile_picture" android:visibility="gone" android:layout_width="175.0dip" android:layout_height="175.0dip" app:border_width="0.0dip" app:border_color="#ffcacaca" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+                <Button android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/btnprof_savepic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Simpan Avatar" style="@style/ButtonAppTheme" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="#ffffffff" android:id="@id/edtNamaProfile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Nama Lengkap" android:maxLines="1" android:singleLine="true" android:maxLength="75" android:capitalize="words" android:editable="false" android:textCursorDrawable="@null" style="@style/EditTextAppTheme" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="#ffffffff" android:id="@id/edtUserNameProfile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Username*" android:maxLines="1" android:singleLine="true" android:maxLength="12" android:capitalize="none" android:editable="false" android:textCursorDrawable="@null" style="@style/EditTextAppTheme" />
+                </RelativeLayout>
+                <TextView android:textColor="#ffdb261e" android:ellipsize="marquee" android:id="@id/txtketusername" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Username tidak bisa diubah" android:singleLine="true" android:marqueeRepeatLimit="100" />
+                <TextView android:textColor="@color/headNameOrange" android:ellipsize="marquee" android:gravity="right" android:id="@id/txtpass" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:text="Password" android:singleLine="true" android:marqueeRepeatLimit="100" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="#ffffffff" android:id="@id/edtEmailProfile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Email*" android:singleLine="true" android:editable="false" android:inputType="textEmailAddress" android:textCursorDrawable="@null" style="@style/EditTextAppTheme" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="2.0dip">
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:id="@id/rdPilHp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textColor="#ffffffff" android:id="@id/rbPilihHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pilih HP" android:layout_weight="0.5" />
+                    <RadioButton android:textColor="#ffffffff" android:id="@id/rbHpLain" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hp lain" android:layout_weight="0.5" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip">
+                    <LinearLayout android:orientation="horizontal" android:padding="4.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioGroup android:orientation="horizontal" android:id="@id/rdJekelProfile" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jenis Kelamin : " android:capitalize="words" />
+                            <RadioButton android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/rbPriaProfile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Pria" android:layout_weight="0.5" style="@style/RadioButtonAppTheme" />
+                            <RadioButton android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/rbWanitaProfile" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Wanita" android:layout_weight="0.5" style="@style/RadioButtonAppTheme" />
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:paddingLeft="2.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanggal Lahir : " android:capitalize="words" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/segitiga" android:background="@drawable/segitigakebalik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/btnTTLProfile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tanggal lahir" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:paddingLeft="2.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alamat : " android:capitalize="words" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:background="@drawable/segitigakebalik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/btnProvProfile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Provinsi" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:paddingLeft="2.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alamat : " android:capitalize="words" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                            <ImageView android:id="@id/segitigaKota" android:background="@drawable/segitigakebalik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <Button android:enabled="false" android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/btnKotaProfile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kota" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <EditText android:id="@id/edtKotaLain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Kota lain..." android:capitalize="words" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:paddingLeft="2.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alamat : " android:capitalize="words" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+                            <ImageView android:id="@id/segitigaKecamatan" android:background="@drawable/segitigakebalik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <Button android:enabled="false" android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/btnKecamatan" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kecamatan*" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="2.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip">
+                    <TextView android:textColor="@color/md_deep_orange_500" android:ellipsize="marquee" android:id="@id/txtPonsel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" android:text="Ponsel / perangkat digunakan :" android:singleLine="true" android:marqueeRepeatLimit="100" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/segitigaPonsel1" android:background="@drawable/ic_action_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/btnHpDigunakanProfile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ponsel pertama" android:singleLine="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/btnHpDigunakan2Profile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ponsel kedua" android:singleLine="true" android:layout_toLeftOf="@id/img_hp2Remove" />
+                        <ImageView android:id="@id/img_hp2Remove" android:background="@drawable/ic_action_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <EditText android:textSize="14.0sp" android:textColorLink="#ffff0000" android:gravity="left" android:id="@id/edtHpDigunakan" android:background="#ffffffff" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:hint="Ponsel digunakan" android:capitalize="words" />
+                    <TextView android:textColor="@color/md_deep_orange_500" android:ellipsize="marquee" android:id="@id/txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="13.0dip" android:text="Kartu SIMCard digunakan :" android:singleLine="true" android:marqueeRepeatLimit="100" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:background="@drawable/ic_action_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                        <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/btnOperatorDigunakanProfile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Operator pertama" android:singleLine="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/btnOperatorDigunakan2Profile" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Operator kedua" android:singleLine="true" android:layout_toLeftOf="@id/img_sim2Remove" />
+                        <ImageView android:id="@id/img_sim2Remove" android:background="@drawable/ic_action_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/btnSimpanProfile" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Simpan" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+                <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/btnBatalProfile" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Batal" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="30.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btnGantiEmail" android:background="@drawable/block_click_blue" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtGantiEmail" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ganti Email" />
+                <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="#80f7f7f7" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Klik untuk mengganti email" android:layout_below="@id/txtGantiEmail" />
+                <ImageView android:id="@id/imgArrowEmail" android:background="@drawable/morerightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btnGantiPass" android:background="@drawable/block_click_blue" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtGantiPass" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ganti Password" />
+                <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="#80f7f7f7" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Klik untuk form ganti password" android:layout_below="@id/txtGantiPass" />
+                <ImageView android:id="@id/imgArrowPass" android:background="@drawable/morerightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/passform" android:background="@drawable/card_spek" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip">
+                    <TextView android:textColor="#ffdb261e" android:ellipsize="marquee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Username tidak bisa diubah" android:singleLine="true" android:marqueeRepeatLimit="100" />
+                    <TextView android:textColor="@color/headNameOrange" android:ellipsize="marquee" android:gravity="right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:text="Password" android:singleLine="true" android:marqueeRepeatLimit="100" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:background="@drawable/garis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <EditText android:id="@id/edtPassProfileLama" android:background="@null" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Password lama" android:maxLines="1" android:password="true" android:singleLine="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:background="@drawable/garis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <EditText android:id="@id/edtPassProfileBaru" android:background="@null" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Password baru" android:password="true" android:singleLine="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:background="@drawable/garis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                            <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                            <EditText android:id="@id/edtrePassProfileBaru" android:background="@null" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Ulangi Password baru" android:password="true" android:singleLine="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textColor="@drawable/text_click" android:layout_gravity="center" android:id="@id/btnSimpanPassword" android:background="@drawable/button_click_blue" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Ganti Password" android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btnLupaPass" android:background="@drawable/block_click_blue" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtLupaPass" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Lupa Password?" />
+                <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="#ffcacaca" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Klik untuk mendapatkan password kembali" android:layout_below="@id/txtLupaPass" />
+                <ImageView android:background="@drawable/morerightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btnBersihCache" android:background="@drawable/block_click_blue" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtBersihCache" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bersihkan Cache?" />
+                <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="#80f7f7f7" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hapus cache memory di InPonsel" android:layout_below="@id/txtBersihCache" />
+                <ImageView android:background="@drawable/morerightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btnKeluar" android:background="@drawable/block_click_blue" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#fff1070c" android:id="@id/txtKeluar" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Keluar" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="#ffcacaca" android:paddingLeft="7.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/txtKeluar" />
+                <ImageView android:background="@drawable/morerightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="2.0dip">
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pilih HP" android:layout_weight="0.5" />
+                        <RadioButton android:textColor="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hp lain" android:layout_weight="0.5" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textStyle="bold" android:textColor="#ff0000ff" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Lupa password? Klik disini!" />
+        </LinearLayout>
+        <Button android:textSize="16.0sp" android:textColor="@drawable/text_click" android:layout_gravity="right" android:id="@id/btnLogoutProfile" android:background="@drawable/button_click_red" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="Keluar dari InPonsel" android:layout_weight="0.5" />
+    </LinearLayout>
+</ScrollView>

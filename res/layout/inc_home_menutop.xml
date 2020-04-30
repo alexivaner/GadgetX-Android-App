@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/headerBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_home_gadget" android:background="@drawable/card_anim_blue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/md_white_1000" android:id="@id/txt_home_count_inbox" android:background="@drawable/background_roundedblue" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="7.0dip" android:text="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="GADGET" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_home_news" android:background="@drawable/card_anim_blue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="NEWS" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_home_forum" android:background="@drawable/card_anim_blue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="FORUM" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_home_interaksi" android:background="@drawable/card_anim_blue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.5dip" android:layout_marginRight="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="INTERAKSI" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

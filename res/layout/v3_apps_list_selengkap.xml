@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/sv_appscategory" android:background="@color/md_grey_300" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip">
+            <ProgressBar android:id="@id/prog_img_apps" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/img_week_apps" android:background="@color/md_red_400" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_white_1000" android:ellipsize="end" android:id="@id/txt_title_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Aplikasi Minggu Ini" android:lines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.inponsel.android.widget.ExpandableHeightGridView android:id="@id/listApps" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:listSelector="#00000000" android:scrollingCache="false" android:verticalSpacing="5.0dip" android:numColumns="1" />
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rekomendasi" android:lines="1" />
+            <com.inponsel.android.widget.ExpandableHeightGridView android:id="@id/listKategoriApps" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="false" android:verticalSpacing="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/myroot" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/child" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar_comment" android:background="@color/appsBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_pop_komen" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="0.2">
+                    <com.inponsel.android.widget.DroidWriterEditText android:id="@id/edt_pop_komen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLines="3" android:capitalize="sentences" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffcacaca" android:id="@id/pop_txtCountKomen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="512" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_send" android:background="@android:drawable/list_selector_background" android:padding="8.0dip" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip">
+                    <Button android:enabled="false" android:id="@id/btn_pop_komen" android:background="@drawable/send_anim" android:padding="3.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:ellipsize="marquee" android:id="@id/btn_pop_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Untuk memberikan komentar silahkan login terlebih dulu" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pop_layout_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar_comment">
+            <ProgressBar android:id="@id/pop_progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/pop_txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no data found" />
+        </LinearLayout>
+        <ListView android:id="@id/listPopKomen" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/newappsBackground" android:dividerHeight="0.0dip" android:layout_above="@id/bottom_bar_comment" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" />
+    </RelativeLayout>
+</RelativeLayout>

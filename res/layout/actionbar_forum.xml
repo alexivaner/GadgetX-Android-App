@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/rl_actionbarforum" android:background="@drawable/anim_item_list_trans" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/txt_label_actionbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="Terbaru" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    <ImageView android:id="@id/img_label_actionbar" android:background="@drawable/apptheme_spinner_default_holo_light" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/txt_label_actionbar" />
+</RelativeLayout>

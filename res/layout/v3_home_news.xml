@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nirhart.parallaxscroll.views.ParallaxScrollView android:orientation="vertical" android:id="@id/sv_root" android:background="@color/md_grey_300" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:parallax_factor="1.9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_rssfeed" android:background="@color/md_white_1000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/img_slideshow_layout" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                    <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progressbar_headline" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerInParent="true" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                    <com.inponsel.android.widget.AutoScrollViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:background="@color/md_grey_300" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_hnews_terpopuler" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <ImageView android:id="@id/img_hnews_terpopuler" android:background="@drawable/ic_news_populer" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/icon_desc" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff212121" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terpopuler" android:layout_below="@id/img_hnews_terpopuler" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_hnews_terkomentari" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <ImageView android:id="@id/img_hnews_terkomentari" android:background="@drawable/ic_news_comment" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/icon_desc" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff212121" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terkomentari" android:layout_below="@id/img_hnews_terkomentari" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_hnews_Favorit" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <ImageView android:id="@id/img_hnews_Favorit" android:background="@drawable/ic_news_fav" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/icon_desc" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff212121" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Favorit" android:layout_below="@id/img_hnews_Favorit" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_hnews_berlangganan" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <ImageView android:id="@id/img_hnews_berlangganan" android:background="@drawable/ic_news_subsc" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/icon_desc" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff212121" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Langganan" android:layout_below="@id/img_hnews_berlangganan" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progressbar_rssfeed" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/GNowProgressBar" />
+                <RelativeLayout android:id="@id/lay_head_rssnews" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/listBerita" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_progbar_rss" />
+                </RelativeLayout>
+                <fr.castorflex.android.circularprogressbar.CircularProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressbar_rssfeedmore" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="15.0dip" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

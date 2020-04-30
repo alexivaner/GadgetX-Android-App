@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/marginLeftRight" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/marginLeftRight" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_news" android:background="@drawable/card_anim_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:background="@drawable/home_berita" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <de.morrox.fontinator.FontTextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:gravity="left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="BERITA" app:font="@string/fontcustom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_gadget" android:background="@drawable/card_anim_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_gravity="center" android:background="@drawable/home_gadget" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            </RelativeLayout>
+            <de.morrox.fontinator.FontTextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="GADGET" app:font="@string/fontcustom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/marginLeftRight" android:layout_marginRight="@dimen/marginLeftRight" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_sc" android:background="@drawable/card_anim_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:background="@drawable/home_servicecenter" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <de.morrox.fontinator.FontTextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:gravity="left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="SERVICE CENTER" app:font="@string/fontcustom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_turunharga" android:background="@drawable/card_anim_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_gravity="center" android:background="@drawable/home_turuharga" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            </RelativeLayout>
+            <de.morrox.fontinator.FontTextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="TURUN HARGA" app:font="@string/fontcustom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/marginLeftRight" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/marginLeftRight">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_aplikasi" android:background="@drawable/menu_apps" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/anim_item_list_trans2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:background="@drawable/home_aplikasi" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="10.0dip" />
+                <de.morrox.fontinator.FontTextView android:textSize="28.0sp" android:textColor="@color/md_grey_50" android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="APLIKASI" app:font="@string/fontcustom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_games" android:background="@drawable/menu_game" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/anim_item_list_trans2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/home_game" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="10.0dip" android:layout_centerHorizontal="true" />
+                <de.morrox.fontinator.FontTextView android:textSize="28.0sp" android:textColor="@color/md_grey_50" android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="120.0dip" android:text="GAMES" app:font="@string/fontcustom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

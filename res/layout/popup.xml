@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/popupOutside" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ScrollView android:background="#ffefefed" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_margin="0.5dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/layDaftar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+                        <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <TextView android:textSize="18.0sp" android:textColor="#80000000" android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Daftar" android:layout_centerVertical="true" />
+                            <RelativeLayout android:id="@id/slideRegister" android:background="@drawable/tile_click" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:background="#ffefefed" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <RelativeLayout android:id="@id/slideSortLike" android:background="@drawable/tile_click" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                            <TextView android:textSize="14.0sp" android:textColor="#80000000" android:gravity="center_vertical" android:id="@id/txtPoPSortLike" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Berdasarkan terbanyak likes" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:background="#ffefefed" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <TextView android:textSize="14.0sp" android:textColor="#80000000" android:gravity="center_vertical" android:id="@id/txtPoPSortDisLike" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Berdasarkan terbanyak dislikes" android:layout_centerVertical="true" />
+                            <RelativeLayout android:id="@id/slideSortDisLike" android:background="@drawable/tile_click" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:background="#ffefefed" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <TextView android:textSize="14.0sp" android:textColor="#80000000" android:gravity="center_vertical" android:id="@id/txtPoPNotKomen" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Notifikasi komentar" android:layout_centerVertical="true" />
+                            <RelativeLayout android:id="@id/slideNotKomen" android:background="@drawable/tile_click" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

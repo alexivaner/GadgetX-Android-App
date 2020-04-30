@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/md_white_1000" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_empty_RSS" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Belum ada berita difavorit" />
+    <ScrollView android:id="@id/scrolView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/home_menu_anim" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:paddingLeft="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Berita" />
+                <ProgressBar android:id="@id/progressbar_RSSFav" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_listview_RSS" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

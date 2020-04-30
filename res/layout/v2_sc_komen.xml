@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/myroot" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/child" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar_comment" android:background="@color/appsBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_pop_komen" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_emot" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:id="@id/btn_pop_emot" android:background="@drawable/emot_anim" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lay_button_send">
+                    <com.inponsel.android.widget.DroidWriterEditText android:id="@id/edt_pop_komen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="4" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:id="@id/pop_txtCountKomen" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="512" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_send" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:enabled="false" android:id="@id/btn_send_komen" android:background="@drawable/send_anim" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="1.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button android:ellipsize="marquee" android:id="@id/btn_pop_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Untuk memberikan komentar silahkan login terlebih dulu" android:singleLine="true" />
+            <GridView android:id="@id/listEmot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:listSelector="#00000000" android:scrollingCache="false" android:horizontalSpacing="1.0dip" android:numColumns="auto_fit" android:soundEffectsEnabled="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar_comment">
+            <ProgressBar android:id="@id/pop_progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/pop_txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no data found" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/detail_txtMerek" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Samsung" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:id="@id/detail_txtCodename" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Codename" />
+        <TextView android:id="@id/detail_txtidHp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="idHp" />
+        <ListView android:id="@id/listPopKomen" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/newappsBackground" android:dividerHeight="0.0dip" android:layout_above="@id/bottom_bar_comment" android:fastScrollEnabled="true" android:smoothScrollbar="true" />
+        <Button android:id="@id/btn_dialog_com" android:background="@drawable/emot_anim" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

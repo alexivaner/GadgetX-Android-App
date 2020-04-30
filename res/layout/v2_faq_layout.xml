@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/myroot" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/webView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layfaqaq" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:text="@string/faq" />
+                    <TextView android:textColor="@color/tabDark" android:id="@id/txtFaqTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/faqDesc" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqTanya" android:layout_weight="0.82" />
+                            <TextView android:textColor="#ff000000" android:id="@id/txtq9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@null" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+                            <TextView android:textStyle="bold" android:textColor="@color/tabDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faqJawab" android:layout_weight="0.82" />
+                            <TextView android:textColor="@color/tabDark" android:id="@id/txta9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/tabDark" android:id="@id/txt_keb" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

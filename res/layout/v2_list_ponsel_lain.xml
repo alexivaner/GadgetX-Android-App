@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_empty" android:background="@color/newappsBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+            <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no data found" />
+        </LinearLayout>
+        <ScrollView android:id="@id/scrolView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/adv_type1" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:orientation="vertical" android:id="@id/img_head_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.inponsel.android.widget.ExpandableHeightGridView android:id="@id/listHpPendatang" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:listSelector="#00000000" android:scrollingCache="false" android:verticalSpacing="5.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/grup_header_footer" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <Button android:id="@id/btnLoadMore" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="Abaikan" style="@style/ButtonAppTheme" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_footer" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ProgressBar android:id="@id/progressbar_footer" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                        <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:id="@id/txt_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:layout_toRightOf="@id/progressbar_footer" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

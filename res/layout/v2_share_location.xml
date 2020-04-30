@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.google.android.gms.maps.MapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progbar_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@id/map" style="@style/GNowProgressBar" />
+    <Button android:id="@id/btnSendMyLoc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Kirim lokasi saya" android:layout_below="@id/progbar_location" style="@style/ButtonAppTheme" />
+    <ListView android:id="@id/listPlaces" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:transcriptMode="normal" android:divider="@color/garis_bates" android:dividerHeight="0.5dip" android:layout_below="@id/btnSendMyLoc" android:fastScrollEnabled="false" />
+</RelativeLayout>

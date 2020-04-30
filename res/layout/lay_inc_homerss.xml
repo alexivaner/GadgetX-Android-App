@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_rssfeed" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/md_white_1000" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <RelativeLayout android:id="@id/img_slideshow_layout" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <ProgressBar android:id="@id/progressbar_headline" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                <com.inponsel.android.utils.PagerContainer android:id="@id/pager_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </com.inponsel.android.utils.PagerContainer>
+            </RelativeLayout>
+            <com.inponsel.android.utils.CirclePageIndicator android:layout_gravity="center" android:id="@id/indicator" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/btnMorerssfeed" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#80000000" android:paddingLeft="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Berita gadget dan teknologi terkini" />
+            <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click" android:id="@id/txtMorerssfeed" android:background="@drawable/button_click_orange" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/SELENGKAPNYA" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_rssnews" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/lay_head_rssnews" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/md_deep_orange_500" android:id="@id/txtBigRSSFeed" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BERITA" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imgrssnewsBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:id="@id/rl_progbar_rss" android:layout_width="fill_parent" android:layout_height="125.0dip">
+                    <ProgressBar android:id="@id/progressbar_rssfeed" android:padding="5.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/listBerita" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_progbar_rss" />
+                <RelativeLayout android:orientation="vertical" android:id="@id/lay_berita_lainnya" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/listBerita">
+                    <ProgressBar android:id="@id/progressbar_rssbutton" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                    <ImageView android:id="@id/imgRSSRefresh" android:background="@drawable/rssrefresh" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/md_grey_600" android:gravity="center" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BERITA LAINNYA..." android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rss_apps" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                <ImageView android:id="@id/img_rss_apps" android:background="@drawable/ic_rss_app" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowApps" android:layout_toRightOf="@id/img_rss_apps" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Aplikasi" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kumpulan artikel aplikasi mobile" android:maxLines="2" android:lines="2" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/arrowApps" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rss_Games" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                <ImageView android:id="@id/img_rss_Games" android:background="@drawable/ic_rss_game" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowGames" android:layout_toRightOf="@id/img_rss_Games" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Games" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ulasan game pilihan" android:maxLines="2" android:lines="2" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/arrowGames" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rss_Tips" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                <ImageView android:id="@id/img_rss_Tips" android:background="@drawable/ic_rss_tips" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowTips" android:layout_toRightOf="@id/img_rss_Tips" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Tips &amp; Trik" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Temukan tips &amp; trik terkini" android:maxLines="2" android:lines="2" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/arrowTips" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

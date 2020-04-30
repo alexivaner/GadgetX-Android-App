@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progbar_form_tanya" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/GNowProgressBar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip" android:layout_above="@id/separator">
+        <ImageView android:id="@id/imgAskHp" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/add_pic" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/separator" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/lay_pop_komen" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rgPilTagKomentar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/lay_pop_komen">
+        <RadioButton android:id="@id/rbHasilFoto" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hasil foto " />
+        <RadioButton android:id="@id/rbBenchmark" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Benchmark  " />
+        <RadioButton android:id="@id/rbLainnya" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lainnya" />
+    </RadioGroup>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_pop_komen" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/lay_button_emot" android:background="@android:drawable/list_selector_background" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true">
+            <Button android:id="@id/btn_pop_emot" android:background="@drawable/emot_anim" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lay_button_send" android:layout_toRightOf="@id/lay_button_emot">
+            <com.inponsel.android.widget.DroidWriterEditText android:id="@id/edtKomentar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="4" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:id="@id/pop_txtCountKomen" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="512" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_send" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:enabled="false" android:id="@id/btnPostAskHp" android:background="@drawable/send_anim" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="1.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

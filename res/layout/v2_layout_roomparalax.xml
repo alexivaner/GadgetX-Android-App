@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nirhart.parallaxscroll.views.ParallaxScrollView android:id="@id/scroll_artikel" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:parallax_factor="2.9" app:alpha_factor="2.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/md_grey_400" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <ProgressBar android:id="@id/progressbar_cover" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                <ImageView android:gravity="center" android:id="@id/img_cover" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerCrop" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="150.0dip">
+                <ProgressBar android:id="@id/progressbar_TimelineHP" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/img_empty" android:background="@drawable/empty_content" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_900" android:id="@id/pop_txt_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/img_empty" android:layout_centerInParent="true" />
+                <RelativeLayout android:id="@id/rl_avatar" android:background="@drawable/round_white" android:layout_width="wrap_content" android:layout_height="77.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/imgAvatar" android:layout_width="57.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/ll_forumlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_avatar">
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/md_grey_700" android:gravity="center" android:id="@id/txtLabelConversation" android:background="#ffd0cfcf" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_conversation" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/list_timeline_hp" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:listSelector="#00000000" android:scrollingCache="false" android:verticalSpacing="@dimen/verticalSpc" android:layout_below="@id/txtLabelConversation" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/grup_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/list_timeline_hp">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/md_grey_900" android:gravity="center" android:id="@id/txtbtnfooter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Lihat lainnya..." />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_footerProg" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ProgressBar android:id="@id/progressbar_footerOLD" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                            <TextView android:textColor="@color/md_grey_900" android:id="@id/txt_footerNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/ll_forumlistFoto" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_avatar">
+                    <com.inponsel.android.utils.ExpandedGridView android:id="@id/grid_hasilfoto" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="false" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:numColumns="2" android:soundEffectsEnabled="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/grup_footerFoto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/grid_hasilfoto">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/md_grey_900" android:gravity="center" android:id="@id/txtbtnfooterFoto" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Lihat lainnya..." />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_footerProgFoto" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ProgressBar android:id="@id/progressbar_footerOLDFoto" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                            <TextView android:textColor="@color/md_grey_900" android:id="@id/txt_footerNextFoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/ll_forumlistbenchmark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_avatar">
+                    <com.inponsel.android.utils.ExpandedGridView android:id="@id/grid_benchmark" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="false" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:numColumns="2" android:soundEffectsEnabled="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/grup_footerbenchmark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/grid_benchmark">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/md_grey_900" android:gravity="center" android:id="@id/txtbtnfooterbenchmark" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Lihat lainnya..." />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_footerProgbenchmark" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ProgressBar android:id="@id/progressbar_footerOLDbenchmark" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                            <TextView android:textColor="@color/md_grey_900" android:id="@id/txt_footerNextbenchmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+    <com.faizmalkani.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center" android:id="@id/fabbutton" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="fabClicked" app:drawable="@drawable/room_kirimart" app:color="@color/md_brown_500" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/quickReturnTopTarget" android:background="@color/md_brown_500" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="Top target" />
+</RelativeLayout>

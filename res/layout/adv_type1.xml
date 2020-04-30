@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lay_advertising" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_200" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:id="@id/lay_adv_atas" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <TextView android:textStyle="bold" android:id="@id/txtAdvJudul1" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="InPonsel" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ad" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/imgAdv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toLeftOf="@id/btnAdvDownload">
+                <TextView android:ellipsize="marquee" android:id="@id/txtAdvJudul2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ayo bergabung dengan komunitas smartphone terbesar " android:maxLines="2" android:layout_alignParentLeft="true" android:marqueeRepeatLimit="marquee_forever" />
+                <TextView android:textSize="11.5sp" android:textColor="#90000000" android:id="@id/txtAdvDesc" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="InPonsel adalah layanan direktori smartphone terlengkap di Indonesia. Unduh sekarang juga di Play Store" android:layout_below="@id/txtAdvJudul2" />
+            </RelativeLayout>
+            <Button android:id="@id/btnAdvDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="Download" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/btnStyleBeige" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_200" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

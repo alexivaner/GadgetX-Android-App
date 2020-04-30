@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <screenName name="com.inponsel.android"> Social Share Screen
+</screenName>
+    <screenName name="com.inponsel.android"> About App Screen
+</screenName>
+    <string name="ga_trackingId">UA-39928332-1</string>
+</resources>

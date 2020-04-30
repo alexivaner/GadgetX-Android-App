@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/md_grey_300" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/inc_home_menutop" />
+        <include layout="@layout/inc_home_cariponsel" />
+        <include layout="@layout/inc_home_bandingponsel" />
+        <include layout="@layout/inc_home_ponselmenu" />
+        <include layout="@layout/inc_home_beritamenu" />
+        <include layout="@layout/inc_home_scmenu" />
+        <include layout="@layout/inc_home_forummenu" />
+        <include layout="@layout/inc_home_profilemenu" />
+    </LinearLayout>
+</ScrollView>

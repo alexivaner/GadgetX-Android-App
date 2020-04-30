@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/outside" android:background="@drawable/bg_trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/newappsBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <ListView android:gravity="center" android:layout_gravity="center" android:id="@id/gridNilaiHp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="true" android:numColumns="2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_Username" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgUsername" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Username" android:layout_toRightOf="@id/imgUsername" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_Inbox" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgInbox" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Inbox" android:layout_toRightOf="@id/imgInbox" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_Chatroom" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgChatroom" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Chatroom" android:layout_toRightOf="@id/imgChatroom" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_MyHP" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgMyHP" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Samsung Galaxy S8" android:layout_toRightOf="@id/imgMyHP" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_MySimCard" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgMySimCard" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Im3" android:layout_toRightOf="@id/imgMySimCard" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

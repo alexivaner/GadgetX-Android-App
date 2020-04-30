@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_hp_random" android:background="@drawable/card_border" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:id="@id/btnMoreJempolInPonsel" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/md_black_1000" android:id="@id/txtJempolInPonsel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="\#JempolInPonsel" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_400" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="Hape ini menurut kamu?" android:layout_below="@id/txtJempolInPonsel" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/md_red_500" android:id="@id/txtMoreJempolInPonsel" android:padding="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="NEXT" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/md_lime_50" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_below="@id/btnMoreJempolInPonsel">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/headImageHPRandom" android:layout_width="125.0dip" android:layout_height="145.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:id="@id/rl_hp_random_img" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progressbar_hp_random" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                    <ImageView android:id="@id/imgHpRandom" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="115.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:id="@id/list_txtMerekRandom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" android:layout_below="@id/headImageHPRandom" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_500" android:gravity="center_horizontal" android:id="@id/list_txtHargaRandom" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/list_txtMerekRandom" />
+            <ImageView android:id="@id/img_likerandom_ponsel" android:background="@drawable/like" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/headImageHPRandom" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+            <ImageView android:id="@id/img_dislikerandom_ponsel" android:background="@drawable/dislike" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/headImageHPRandom" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

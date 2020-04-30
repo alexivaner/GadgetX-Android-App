@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_more_vert_white_24dp" android:id="@id/menu_overflow" android:title="" android:showAsAction="always">
+        <menu>
+            <item android:icon="@null" android:id="@id/menu_notif_komen" android:orderInCategory="100" android:title="Notifikasi komentar" android:titleCondensed="Notifikasi komentar" android:checkable="true" />
+        </menu>
+    </item>
+</menu>

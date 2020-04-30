@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressbar_Avatar" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/imgFoto" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_benchscrore" android:background="@color/md_brown_500" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/imgBench" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/md_white_1000" android:id="@id/txt_benchscrore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.000.000" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_200" android:id="@id/txt_benchname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/gradient_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/md_white_1000" android:id="@id/txt_username" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_300" android:id="@id/txt_hp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="" android:maxLines="1" android:lines="1" />
+    </LinearLayout>
+</RelativeLayout>

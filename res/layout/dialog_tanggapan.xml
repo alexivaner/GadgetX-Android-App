@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/myroot" android:background="@drawable/bg_trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.2">
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/lineColor" android:background="#ffe27431" android:layout_width="wrap_content" android:layout_height="5.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lihat Tanggapan" android:drawableLeft="@android:drawable/ic_menu_search" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/linTanggapan" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/dialogTanggapan" android:background="@drawable/tile_click" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lihat Tanggapan" android:drawableLeft="@android:drawable/ic_menu_search" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lineColor" android:background="#ffe27431" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/dialogLike" android:background="@drawable/tile_click" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="2.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Suka" android:drawableLeft="@drawable/like" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lineColor" android:background="#ffe27431" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/dialogDisLike" android:background="@drawable/tile_click" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="2.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Tidak Suka" android:drawableLeft="@drawable/dislike" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

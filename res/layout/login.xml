@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/gradient_splash" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/myrootLogin" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/tabDark" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="LOGIN" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/ic_launcher" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_margin="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <TextView android:textColor="@color/tabDark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Email / Username" />
+                <EditText android:id="@id/loginEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Email / Username" android:singleLine="true" style="@style/EditTextAppTheme" />
+                <TextView android:textColor="@color/tabDark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="15.0dip" android:text="Password" />
+                <EditText android:id="@id/loginPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Password" android:password="true" android:singleLine="true" style="@style/EditTextAppTheme" />
+                <TextView android:textStyle="bold" android:textColor="#ffe30000" android:id="@id/login_error" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <CheckBox android:textSize="12.0sp" android:textColor="@color/tabDark" android:id="@id/saveLoginCheckBox" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ingatkan" android:layout_below="@id/editTextPassword" android:layout_alignParentLeft="true" style="@style/CheckBoxAppTheme" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <RelativeLayout android:id="@id/btnLupaPassword" android:background="@drawable/block_click_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/headerBackground" android:id="@id/txtLoginLupa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lupa password?" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <Button android:enabled="false" android:layout_gravity="center_vertical" android:id="@id/btnLogin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Login" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/headerBackground" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Tidak punya akun?" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:id="@id/btnLinkToRegisterScreen" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonAppTheme" />
+                        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/headerBackground" android:gravity="center" android:id="@id/txtLoginDaftar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Daftar" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:id="@id/btnSkip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonAppTheme" />
+                        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/headerBackground" android:gravity="center" android:id="@id/txtLoginLanjutkan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Lanjutkan" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="#30e27431" android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/headNameBLue" android:gravity="center_horizontal" android:id="@id/txtKebijakanPri" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

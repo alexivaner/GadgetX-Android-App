@@ -1,0 +1,102 @@
+Metode Curl
+https://ilmu-detil.blogspot.com/2016/11/tutorial-curl-php-mengambil-data.html
+
+
+https://github.com/shakee93/fonoapi
+
+API untuk konek ke gsmarena
+https://github.com/ramtin2025/gsmarena-API
+
+Masukkan metode curl ke database
+https://stackoverflow.com/questions/9515891/how-to-use-curl-to-fetch-specific-data-from-a-website-and-then-save-it-my-databa
+https://code.tutsplus.com/id/tutorials/techniques-for-mastering-curl--net-8470
+
+
+Membuat aplikasi untuk server yang bisa konek database
+https://www.codepolitan.com/aplikasi-crud-java-sederhana-menggunakan-database-mysql
+https://www.malasngoding.com/cara-membuat-crud-dengan-java-mysql-part-1/
+
+Membuat APlikasi Database dengan Android Studio
+https://medium.com/@rizal_hilman/aplikasi-portal-berita-android-dengan-php-mysqli-belajarapi-ccde39565403
+https://dedykuncoro.com/2016/03/membuat-aplikasi-android-crud-menggunakan-database-mysql.html
+https://www.rumahcoding.co.id/2013/04/24/menampilkan-data-dari-mysql-ke-dalam-list-view-pada-android-menggunakan-php/
+https://badoystudio.com/membuat-aplikasi-penjualan-menggunakan-android-studio/
+https://dedykuncoro.com/2017/04/android-tutorial-membuat-spinner-atau-combo-box-menggunakan-database-mysql.html
+https://wirasetiawan29.wordpress.com/2016/04/05/filter-data-menggunakan-spinner-pada-sqlite-database/
+http://androidbash.com/connecting-android-app-to-a-database-using-php-and-mysql/
+
+Membuat recycle view dan card view dari database
+https://www.youtube.com/watch?v=YtftuSL3NII&t=379s
+
+Menambah tombol search
+https://www.youtube.com/watch?v=j9_hcfWVkIc
+
+Koneksi database dengan android studio
+http://www.kodingindonesia.com/belajar-membuat-aplikasi-crud-android-menggunakan-database-mysql/
+
+Blog Lengkap tutorial android
+http://km-android.blogspot.com
+
+api token :
+b87ec12d8c6c7c25edffc315c0520cf775e94f6181bd6557
+
+
+
+SQL
+password freemysqlhosting.net
+N4xU&UVdVIDFa9ep
+
+gearhost.com
+hutomoivan@gmail.com
+Ivan1410@
+http://gadgetx.gearhostpreview.com/
+
+
+Server: sql12.freemysqlhosting.net
+Name: sql12242677
+Username: sql12242677
+Password: nfiQ1z9xCd
+Port number: 3306
+
+Website for gadgetx.epizy.com
+VXFK3bWzGHOW
+
+Database
+sql201.epizy.com
+mysql db name: epiz_22233756_gadgetX
+username:	epiz_22233756
+pass    :VXFK3bWzGHOW
+
+
+CREATE TABLE `epiz_22233756_gadgetX`.`tb_smartphone` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+`NAME` VARCHAR( 100 ) NOT NULL ,
+`NETWORK` VARCHAR( 100 ) NOT NULL ,
+`STATUS` VARCHAR( 100 ) NOT NULL ,
+`DIMENSION` VARCHAR( 100 ) NOT NULL ,
+`DISPLAY_TYPE` VARCHAR( 100 ) NOT NULL ,
+`DISPLAY_SIZE` VARCHAR( 100 ) NOT NULL ,
+`CPU` VARCHAR( 100 ) NOT NULL ,
+`OS` VARCHAR( 100 ) NOT NULL ,
+`MEMORY` VARCHAR( 100 ) NOT NULL ,
+`CAMERA` VARCHAR( 100 ) NOT NULL ,
+`BATTERY` VARCHAR( 100 ) NOT NULL ,
+PRIMARY KEY ( `id` )
+) ENGINE = MYISAM ;
+
+
+
+
+Method:
+1. Fetch GSMarena dengan metode curl
+2. Masukkan/inject ke database pribadi
+3. Buat aplikasi java untuk desktop dengan metode crud
+4. Buat layout aplikasi android 
+5. Buat aplikasi android dengan metode crud
+6. DOne
+
+method 2:
+1. Fetch GSMarena dengan metode curl
+2. Buat aplikasi java untuk desktop dengan metode show php
+3. Buat layout aplikasi android 
+4. Buat aplikasi android dengan show php

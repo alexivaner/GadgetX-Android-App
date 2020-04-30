@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/categoryCell" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/shareImage" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" android:contentDescription="image_view" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff000000" android:id="@id/shareName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_toRightOf="@id/shareImage" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

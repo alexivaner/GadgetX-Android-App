@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_menu_bottom_spek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/md_grey_700" android:id="@id/btnReportInCorrect" android:background="@drawable/button_click_redwhite" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Menemukan kesalahan? Lapor disini" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@drawable/text_click_whiteorange" android:id="@id/btnKomentarHp" android:background="@drawable/button_click_greywhite" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Komentar (0)" android:layout_weight="0.5" />
+        <Button android:textColor="@drawable/text_click_whiteorange" android:id="@id/btnAddKomentarHp" android:background="@drawable/button_click_greywhite" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Tulis komentar" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/md_grey_200" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/triangle" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_100" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHARE" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/md_grey_200" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/imgbtn_share_fb" android:background="@drawable/ic_menu_spek_facebook" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" />
+                <ImageButton android:id="@id/imgbtn_share_tw" android:background="@drawable/ic_menu_spek_twitter" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" />
+                <ImageButton android:id="@id/imgbtn_share_gplus" android:background="@drawable/ic_menu_spek_google_plus" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" />
+                <ImageButton android:id="@id/imgbtn_share_wa" android:background="@drawable/ic_menu_spek_whats_app" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" />
+                <ImageButton android:id="@id/imgbtn_share_mail" android:background="@drawable/ic_menu_spek_email" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" />
+                <ImageButton android:id="@id/imgbtn_share_more" android:background="@drawable/ic_menu_spek_more" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_GalleriFoto" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreGalleriFoto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_galleri" android:background="@drawable/gallery" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigGalleriFoto" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Galeri Foto" android:layout_toRightOf="@id/ikhmenu_galleri" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/md_grey_100" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_Berita" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreBerita" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_berita" android:background="@drawable/beritaterkait" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigBerita" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Berita Terkait" android:layout_toRightOf="@id/ikhmenu_berita" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/md_grey_100" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <LinearLayout android:enabled="false" android:orientation="vertical" android:id="@id/layout_RivalTerdekat" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreRivalTerdekat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_rival" android:background="@drawable/rivalterdekat" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigRivalTerdekat" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rival Terdekat" android:layout_toRightOf="@id/ikhmenu_rival" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/md_grey_100" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_SCTerdekat" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreSCTerdekat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_scterdekat" android:background="@drawable/servicecenter" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigSCTerdekat" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Service Center Terdekat" android:layout_toRightOf="@id/ikhmenu_scterdekat" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/md_grey_100" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_Bandingkan" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreBandingkan" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_bandingkan" android:background="@drawable/bandingkan" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigBandingkan" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bandingkan" android:layout_toRightOf="@id/ikhmenu_bandingkan" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/md_grey_100" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_Twitter" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreTwitter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_twitter" android:background="@drawable/twitter" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigTwitter" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Twitter" android:layout_toRightOf="@id/ikhmenu_twitter" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/md_grey_100" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_HpLain" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreHpLain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_hplain" android:background="@drawable/ponsellainnya" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigHpLain" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ponsel Lain" android:layout_toRightOf="@id/ikhmenu_hplain" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/md_grey_100" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_VendorProf" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <RelativeLayout android:id="@id/btnMoreVendorProf" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_perusahaan" android:background="@drawable/profilperusahaan" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigVendorProf" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Profil Perusahaan" android:layout_toRightOf="@id/ikhmenu_perusahaan" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/md_grey_100" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_NotifKomentarHp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <RelativeLayout android:id="@id/btnMoreNotifKomentarHp" android:background="@drawable/card_anim_ikh" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:id="@id/txtBigNotifKomentarHp" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Aktifkan Notifikasi Komentar " android:layout_toLeftOf="@id/chkNotifKomenHp" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/chkNotifKomenHp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffcacaca" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_Room" android:background="@drawable/card_anim_ikh" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:id="@id/btnMoreRoom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_Room" android:background="@drawable/gallery" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/md_grey_800" android:id="@id/txtBigRoom" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Forum Diskusi Samsung Galaxy S5" android:layout_toRightOf="@id/ikhmenu_Room" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffcacaca" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_ChatRoom" android:background="@color/md_grey_200" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <RelativeLayout android:background="@drawable/anim_item_list_trans" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_800" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Chat room" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffcacaca" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_Forum" android:background="@color/md_grey_200" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="3.0dip">
+            <RelativeLayout android:background="@drawable/anim_item_list_trans" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_800" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Forum" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffcacaca" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_KomentarHp" android:background="@drawable/card_anim_ikh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btnMoreKomentarHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ikhmenu_komen" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_800" android:id="@id/txtBigKomentarHp" android:paddingLeft="15.0dip" android:paddingTop="@dimen/margin_ikh_topbot" android:paddingBottom="@dimen/margin_ikh_topbot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Komentar " android:layout_toRightOf="@id/ikhmenu_komen" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_inad_native" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

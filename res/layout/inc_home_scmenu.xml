@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_ServiceCenter" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgServiceCenter" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Service Center" android:layout_toRightOf="@id/imgServiceCenter" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_SCProv" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgSCProv" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Service Center di Prov" android:layout_toRightOf="@id/imgSCProv" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_CariManual" android:background="@drawable/anim_click_menudrawer" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/imgCariManual" android:background="@drawable/database_produk_32x32" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_700" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cari Manual" android:layout_toRightOf="@id/imgCariManual" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

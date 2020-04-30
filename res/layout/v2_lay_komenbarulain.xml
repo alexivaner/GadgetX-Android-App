@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/newappsBackground" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progbar_notifHP" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/GNowProgressBar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_downmenu" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar_comment">
+        <ProgressBar android:id="@id/pop_progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/pop_txt_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <Button android:id="@id/btnRefresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refresh" style="@style/ButtonAppTheme" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollviewKomen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar_comment" android:layout_below="@id/progbar_notifHP">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/grup_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/txtbtnheader" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Tekan untuk refresh..." />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_header" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/progressbar_header" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                    <TextView android:textColor="#ff000000" android:id="@id/txt_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:layout_toRightOf="@id/progressbar_footer" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/grup_footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/txtbtnfooter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Lihat komentar lama..." />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_footerNext" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/progressbar_footerNext" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" android:layout_centerInParent="true" />
+                    <TextView android:textColor="#ff000000" android:id="@id/txt_footerNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:layout_toRightOf="@id/progressbar_footer" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar_comment" android:background="@color/appsBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_pop_komen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_emot" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_pop_emot" android:background="@drawable/emot_anim" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lay_button_send">
+                <com.inponsel.android.widget.DroidWriterEditText android:id="@id/edt_pop_komen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="4" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:id="@id/pop_txtCountKomen" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="512" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_button_send" android:background="@android:drawable/list_selector_background" android:padding="5.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:enabled="false" android:id="@id/btn_send_komen" android:background="@drawable/send_anim" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="1.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/btn_pop_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Untuk memberikan komentar silahkan login terlebih dulu" android:singleLine="true" style="@style/ButtonAppTheme" />
+    </LinearLayout>
+</RelativeLayout>

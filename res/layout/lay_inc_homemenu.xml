@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/md_deep_orange_500" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_head_menu3" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_inbox" android:background="@drawable/button_click_orangewhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/md_white_1000" android:id="@id/txtUnreadCountMenu" android:background="@drawable/background_roundedblue" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="2.0dip" android:text="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click_whiteorange" android:id="@id/txtLabelInbox" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INBOX" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_groupchat" android:background="@drawable/button_click_orangewhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ic_drawer_chatroom_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/md_white_1000" android:id="@id/txtUnreadCountgroupchat" android:background="@drawable/background_roundedblue" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="2.0dip" android:text="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click_whiteorange" android:id="@id/txtLabelgroupchat" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHAT ROOM" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_katprod" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:background="#ff0277bd" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/homekatalogproduk" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:background="@drawable/anim_item_menuhome" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:orientation="horizontal" android:background="@drawable/shadow_dark" android:visibility="visible" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="KATALOG PRODUK" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_daftarharga" android:background="@drawable/button_click_orangewhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/homedaftarharga" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click_whiteorange" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="PANDUAN BELANJA" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_statistik" android:background="@drawable/button_click_orangewhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/homestatistic" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click_whiteorange" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="STATISTIK" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_turunharga" android:background="@drawable/button_click_orangewhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/hometurunharga" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click_whiteorange" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TURUN HARGA" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/home_menu_pencrinci" android:background="@drawable/button_click_orangewhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/homepencarianrinci" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click_whiteorange" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="PENCARIAN RINCI" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

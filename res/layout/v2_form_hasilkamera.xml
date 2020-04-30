@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progbar_form_tanya" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/GNowProgressBar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+                <ImageView android:id="@id/imgAskHp" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/add_pic" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/md_grey_700" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="*" android:layout_toRightOf="@id/imgAskHp" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rotateLeft" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_toRightOf="@id/discard" style="@style/ButtonAppTheme">
+                    <ImageView android:background="@drawable/rotateleft" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rotateRight" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_toRightOf="@id/rotateLeft" style="@style/ButtonAppTheme">
+                    <ImageView android:background="@drawable/rotateright" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rl_hasilfoto" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_hasilfoto" android:background="@drawable/segitigakebalik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" />
+                <LinearLayout android:background="@drawable/garisseg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <Button android:textSize="14.0sp" android:gravity="left|center" android:id="@id/btnhasilfoto" android:background="@null" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Kondisi cahaya saat mengambil foto?*" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:gravity="left|center" android:background="@null" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Penggunaan LED Flash?*" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/rgPilLEDFLash" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/rbLEDYa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ya" android:layout_weight="0.5" />
+                <RadioButton android:id="@id/rbLEDTidak" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tidak" android:layout_weight="0.5" />
+            </RadioGroup>
+            <EditText android:gravity="top" android:id="@id/edtPertanyaan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Info tambahan" android:minLines="5" android:capitalize="sentences" style="@style/EditTextAppTheme" />
+            <TextView android:textColor="@color/md_grey_700" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="*Wajib diisi" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_700" android:gravity="left|center" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="**sangat dianjurkan foto orisinil (belum diolah dan dipotong)" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:enabled="false" android:id="@id/btnSaveAskHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Save Draft" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+                <Button android:enabled="false" android:id="@id/btnPostAskHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Submit" android:layout_weight="0.5" style="@style/ButtonAppTheme" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

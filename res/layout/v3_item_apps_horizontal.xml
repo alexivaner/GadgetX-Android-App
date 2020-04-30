@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/card_anim_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_apps_1" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_margin="5.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_hap_apps1" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5" android:layout_toLeftOf="@id/rl_download_apps" android:layout_toRightOf="@id/img_apps_1" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/txt_apps_name_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="InPonsel" android:maxLines="2" android:marqueeRepeatLimit="marquee_forever" />
+        <RatingBar android:id="@id/rbar_apps_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:rating="3.0" android:stepSize="0.1" android:isIndicator="true" style="@style/RatingBarSmallAppTheme" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/md_grey_500" android:ellipsize="marquee" android:id="@id/txt_apps_downcount_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5000K | 9.5 MB" android:lines="2" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_download_apps" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginRight="5.0dip" android:baselineAligned="false" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/img_download_1" android:background="@drawable/delfav" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

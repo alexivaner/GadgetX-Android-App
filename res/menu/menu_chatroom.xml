@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_attachment" android:id="@id/menu_attachment" android:orderInCategory="0" android:title="Attachment" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_more_vert_white_24dp" android:id="@id/menu_overflow" android:orderInCategory="0" android:title="" android:showAsAction="always">
+        <menu>
+            <item android:icon="@null" android:id="@id/menu_info_chat" android:orderInCategory="100" android:title="Info Chat Room" />
+            <item android:icon="@null" android:id="@id/menu_notif_chat" android:orderInCategory="100" android:title="Aktifkan Notifikasi" android:titleCondensed="Aktifkan Notifikasi" android:checkable="true" />
+        </menu>
+    </item>
+</menu>

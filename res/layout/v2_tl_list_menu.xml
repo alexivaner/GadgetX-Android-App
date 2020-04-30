@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/md_brown_500" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@id/progbar_roomhp" android:background="@color/md_brown_500" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/GNowProgressBar" />
+        <include layout="@layout/lay_inc_room_menu" />
+    </LinearLayout>
+</ScrollView>

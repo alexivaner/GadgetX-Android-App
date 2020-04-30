@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@android:style/Widget.ActionButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="?android:actionBarSize">
+        <ImageView android:gravity="center" android:id="@id/img_Notification" android:background="@drawable/ic_notifications_none_white_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:layout_centerVertical="true" android:contentDescription="bell" />
+        <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_notif_count" android:background="@drawable/rounded_square" android:visibility="invisible" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="8.0dip" android:text="100" android:singleLine="true" />
+    </RelativeLayout>
+</RelativeLayout>

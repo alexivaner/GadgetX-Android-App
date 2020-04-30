@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/myroot" android:background="@drawable/gradient_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imgOverlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <include layout="@layout/inc_lay_register" />
+    </RelativeLayout>
+</RelativeLayout>

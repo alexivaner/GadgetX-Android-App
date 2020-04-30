@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/card_border" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:id="@id/rl_slideshow_tips_news" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progressbar_viewpager_tips_news" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="10.0dip" android:layout_centerInParent="true" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <com.inponsel.android.utils.PagerContainer android:id="@id/pager_container_tips_news" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager android:id="@id/view_pager_tips_news" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.inponsel.android.utils.PagerContainer>
+        </RelativeLayout>
+        <com.inponsel.android.utils.CirclePageIndicator android:layout_gravity="center" android:id="@id/indicator_tips_news" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/home_menu_news_tips" android:background="@drawable/anim_item_list_trans" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowgadget_pilihan" android:layout_toRightOf="@id/img_gadget_pilihan" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/md_grey_600" android:ellipsize="end" android:id="@id/txt_news_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Artikel e-commerce lainnya" android:lines="1" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/arrowgadget_pilihan" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

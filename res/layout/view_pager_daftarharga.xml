@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="left|center" android:id="@id/btnTes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pilih rentang harga" style="@style/ButtonAppTheme" />
+        <com.astuetz.PagerSlidingTabStrip android:id="@id/indicator" android:background="@color/md_orange_800" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pagerHeight" android:fillViewport="true" app:pstsIndicatorHeight="1.0dip" app:pstsShouldExpand="true" app:pstsTextAllCaps="false" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/custom_pager" android:background="@color/md_deep_orange_500" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="12.0sp" android:textColor="@color/md_deep_orange_500" android:ellipsize="marquee" android:id="@id/btnPENCARIAN" android:background="@drawable/button_white_orange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="2.5dip" android:text="PENCARIAN" android:singleLine="true" android:layout_weight="0.3" android:marqueeRepeatLimit="marquee_forever" />
+            <Button android:textSize="12.0sp" android:textColor="@drawable/text_click_whiteorange" android:ellipsize="marquee" android:id="@id/btnHASIL" android:background="@drawable/button_click_orangewhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:text="HASIL" android:singleLine="true" android:layout_weight="0.3" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

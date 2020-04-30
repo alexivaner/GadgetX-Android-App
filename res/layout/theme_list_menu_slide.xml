@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/newappsBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="left|center" android:id="@id/btnTes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pilih rentang harga" style="@style/ButtonAppTheme" />
+        <com.viewpagerindicator.TitlePageIndicator android:textSize="14.0sp" android:textColor="@color/md_grey_300" android:id="@id/indicator" android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="30.0dip" app:selectedColor="@color/md_white_1000" app:footerColor="#00e27431" app:footerLineHeight="0.0dip" app:footerIndicatorStyle="none" app:footerIndicatorHeight="0.0dip" app:selectedBold="true" />
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

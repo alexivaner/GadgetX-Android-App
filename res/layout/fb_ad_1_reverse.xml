@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/adUnit" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <RelativeLayout android:id="@id/rl_txtad" android:background="@drawable/triangle_ads_grey" android:layout_width="26.0dip" android:layout_height="26.0dip">
+            <TextView android:textSize="6.5sp" android:textColor="@color/md_grey_800" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:rotation="315.0" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/nativeAdIcon" android:layout_centerVertical="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:id="@id/nativeAdTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="InPonsel" android:lines="1" />
+            <RatingBar android:id="@id/nativeAdStarRating" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stepSize="0.1" android:isIndicator="true" style="@style/RatingBarSmallAppTheme" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:id="@id/nativeAdBody" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available on Google Play Store" android:maxLines="1" android:lines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:id="@id/txt_isplaystore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available on Google Play Store" android:maxLines="1" android:lines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/nativeAdIcon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+    </RelativeLayout>
+    <ImageView android:gravity="center" android:id="@id/nativeAdImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/image_desc" />
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/nativeAdSocialContext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+        </LinearLayout>
+        <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/nativeAdCallToAction" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>

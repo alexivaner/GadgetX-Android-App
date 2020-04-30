@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+        <LinearLayout android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Model" android:layout_weight="0.65" />
+                <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.35">
+                    <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                    <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                    <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencModel" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Panjang" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Maksimal" android:layout_weight="0.6" />
+                    <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                        <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                        <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencPanjang" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Lebar" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Maksimal" android:layout_weight="0.6" />
+                    <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                        <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                        <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencLebar" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_weight="0.3" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Tebal" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Maksimal" android:layout_weight="0.6" />
+                    <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                        <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                        <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencTebal" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Bobot" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Maksimal" android:layout_weight="0.6" />
+                    <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                        <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                        <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencBobot" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_weight="0.3" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+        <LinearLayout android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Sistem Operasi" android:layout_weight="0.65" />
+                <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.35">
+                    <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                    <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                    <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencSistem" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Prosessor" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Minimal" android:layout_weight="0.6" />
+                        <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                            <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                            <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                            <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencProsessor" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Clock" android:layout_alignParentBottom="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="CPU Core" android:layout_weight="0.65" />
+                <RelativeLayout android:id="@id/rl_cpu_core" android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.35">
+                    <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                    <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                    <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencCore" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Core" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+        <LinearLayout android:background="@color/md_deep_orange_500" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="RAM" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Minimal" android:layout_weight="0.6" />
+                    <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                        <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                        <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencRAM" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Memori Internal" android:layout_weight="0.65" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Minimal" android:layout_weight="0.6" />
+                    <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.3">
+                        <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                        <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                        <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencInternal" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:text="Memori Eksternal" android:layout_weight="0.65" />
+                <RelativeLayout android:background="@color/md_orange_50" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="0.35">
+                    <ImageView android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0" />
+                    <LinearLayout android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+                    <Button android:textColor="@drawable/anim_text_deeporange" android:gravity="left|center" android:id="@id/btnPencEksternal" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Abaikan" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

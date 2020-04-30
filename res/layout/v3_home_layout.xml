@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/md_grey_300" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_inbox" android:background="@drawable/card_blue_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+                    <TextView android:textSize="8.0sp" android:textColor="@color/md_white_1000" android:id="@id/txt_home_count_inbox" android:background="@drawable/background_roundedblue" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="7.0dip" android:text="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="INBOX" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_chatroom" android:background="@drawable/card_blue_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="2.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CHATROOM" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_forum" android:background="@drawable/card_blue_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="2.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="FORUM" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_setting" android:background="@drawable/card_blue_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="2.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SETTING" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_news" android:background="@drawable/card_red" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="BERITA" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_gadget" android:background="@drawable/card_yellow" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="GADGET" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_aplikasi" android:background="@drawable/card_blue_2" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="APLIKASI" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_home_games" android:background="@drawable/card_green_2" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.5dip" android:layout_weight="0.5">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/inbox_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="GAMES" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffefeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/home_menu_user_ponsel" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                <ImageView android:id="@id/img_user_ponsel" android:background="@drawable/ic_ponsel_home" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowuser_ponsel" android:layout_toRightOf="@id/img_user_ponsel" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:id="@id/txt_user_ponsel_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Samsung Galaxy S6" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:id="@id/txt_user_ponseldesc_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pelajari semua dari ponsel kamu" android:maxLines="2" android:lines="2" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/arrowuser_ponsel" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffefeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/home_menu_Conversation" android:background="@drawable/anim_item_list_trans" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                <ImageView android:id="@id/img_rss_conv" android:background="@drawable/home_menu_conv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowConv" android:layout_toRightOf="@id/img_rss_conv" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Conversation" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Punya ide atau kritik untuk INPONSEL? Masuk!" android:maxLines="2" android:lines="2" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/arrowConv" android:background="@drawable/arrow_right_orange" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rekomendasi buat kamu" android:lines="1" />
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progbar_appsrecomend" android:visibility="visible" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_margin="5.0dip" android:layout_alignParentRight="true" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+        <com.inponsel.android.widget.ExpandableHeightGridView android:id="@id/listAppsMingguIni" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:listSelector="#00000000" android:scrollingCache="false" android:verticalSpacing="5.0dip" android:numColumns="3" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_headlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff212121" android:ellipsize="end" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Interaksi pengunjung" android:lines="1" />
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar android:layout_gravity="center" android:id="@id/pop_progressbar_middle" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="10.0dip" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_800" android:ellipsize="end" android:layout_gravity="center" android:id="@id/pop_txt_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Memuat..." android:lines="1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_head_headerlist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/txtbtnheader" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Tekan untuk refresh..." />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_head_progbar" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progressbar_header" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:layout_centerInParent="true" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                    <TextView android:textColor="#ff000000" android:id="@id/txt_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:layout_toRightOf="@id/progressbar_footer" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_homelist_interaksi" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_foot_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/txtbtnfooter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="Lihat komentar lama..." />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_foot_progbar" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progressbar_footerNext" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:layout_centerInParent="true" app:cpb_colors="@array/cpb_colors" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                    <TextView android:textColor="#ff000000" android:id="@id/txt_footerNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:layout_toRightOf="@id/progressbar_footer" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

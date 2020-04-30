@@ -1,0 +1,35 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.inponsel.android.v2;
+
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import com.squareup.picasso.Callback;
+
+// Referenced classes of package com.inponsel.android.v2:
+//            HomeNewMainActivity
+
+class this._cls1
+    implements Callback
+{
+
+    final d this$1;
+
+    public void onError()
+    {
+    }
+
+    public void onSuccess()
+    {
+        cess._mth3(this._cls1.this).img_brand.setVisibility(0);
+        cess._mth3(this._cls1.this).layout_TerbaruBrand.setVisibility(0);
+    }
+
+    ()
+    {
+        this$1 = this._cls1.this;
+        super();
+    }
+}

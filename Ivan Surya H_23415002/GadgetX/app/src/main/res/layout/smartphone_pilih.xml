@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardviewDets"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_cover"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/smartphone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_cover"
+                android:paddingLeft="5dp"
+                android:text="iPhone X"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/smartphone_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/smartphone_title"
+                android:layout_toRightOf="@id/img_cover"
+                android:padding="5dp"
+                android:text="Status: "
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/smartphone_network"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_below="@+id/smartphone_desc"
+                android:layout_toEndOf="@+id/img_cover"
+                android:paddingLeft="5dp"
+                android:text="Network:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/smartphone_dim"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_below="@+id/smartphone_network"
+                android:layout_toEndOf="@+id/img_cover"
+                android:paddingLeft="5dp"
+                android:text="Dimension:"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/img_cover"
+                android:padding="5dp"
+                android:text="Brand: "
+                android:textColor="@android:color/holo_orange_dark" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeView"
+        android:layout_width="369dp"
+        android:layout_height="00dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewDets"
+        app:layout_constraintVertical_bias="0.009">
+
+        <TextView
+            android:id="@+id/smartphone_disty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Display Type:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smartphone_disz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smartphone_disty"
+            android:padding="5dp"
+            android:text="Display Size:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smartphone_disz"
+            android:padding="5dp"
+            android:text="CPU:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/os"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cpu"
+            android:padding="5dp"
+            android:text="OS:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/os"
+            android:padding="5dp"
+            android:text="Memory:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/memory"
+            android:padding="5dp"
+            android:text="Camera:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/batt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/camera"
+            android:padding="5dp"
+            android:text="Battery:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

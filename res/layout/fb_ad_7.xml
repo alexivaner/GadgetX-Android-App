@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root_ads" android:background="@drawable/card_border" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/adUnit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+        <ImageView android:gravity="center" android:id="@id/nativeAdImage" android:background="@color/md_grey_100" android:layout_width="fill_parent" android:layout_height="175.0dip" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/rl_txtad" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="6.5sp" android:textColor="#ffbdbdbd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SPONSORED" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/nativeAdSocialContext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_desc_apps" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/nativeAdIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/icon_desc" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/nativeAdCallToAction" android:layout_toRightOf="@id/nativeAdIcon">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/md_grey_900" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/nativeAdTitle" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="InPonsel" android:maxLines="3" />
+            <RatingBar android:id="@id/nativeAdStarRating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stepSize="0.1" android:isIndicator="true" style="@style/RatingBarSmallAppTheme" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/md_grey_600" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/nativeAdBody" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="The Largest Indonesia mobile" android:maxLines="3" />
+        </LinearLayout>
+        <Button android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/text_click_whitegreen" android:gravity="center" android:id="@id/nativeAdCallToAction" android:background="@drawable/button_click_greenwhite_nobor" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="INSTALL" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/arrow" android:background="@drawable/arrow_right_orange" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

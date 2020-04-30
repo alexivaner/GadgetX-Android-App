@@ -1,0 +1,114 @@
+package id.ac.petra.gadgetx;
+
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.util.DiffUtil;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
+
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class AdapterList extends RecyclerView.Adapter<AdapterList.HolderItem> {
+    static List<ModelList> mListItem;
+
+    Context context;
+
+    public AdapterList(List<ModelList> mListItem, Context context) {
+        this.mListItem = mListItem;
+        this.context = context;
+    }
+
+    @Override
+    public HolderItem onCreateViewHolder(ViewGroup parent, int viewType) {
+        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_rows,parent,false);
+        HolderItem holder = new HolderItem(layout);
+        return holder;
+
+    }
+
+    @Override
+    public void onBindViewHolder(HolderItem holder, final int position) {
+        final ModelList mlist = mListItem.get(position);
+        holder.smartphone_title.setText(mlist.getName());
+        holder.smartphone_keterangan.setText(mlist.getStatus());
+
+        /*loading image....*/
+        Glide.with(context)
+                .load(mlist.getImg()).thumbnail(0.5f).crossFade()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(holder.thumbnail);
+
+        //menambah fitur tap pada judul smartphone
+        holder.smartphone_title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,"Tap on the pict of " + mlist.getName() + " to get detail",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //menambah fitur tap pada keterangan smartphone
+        holder.smartphone_keterangan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,"Tap on the pict of " + mlist.getName() + " to get detail",Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.thumbnail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,mlist.getName(),Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(context,smartphone_pilih.class);
+                i.putExtra("Name", mlist.getName());
+                i.putExtra("Image", mlist.getImg());
+                i.putExtra("Status", mlist.getStatus());
+                i.putExtra("Network", mlist.getNetwork());
+                i.putExtra("Dimension", mlist.getDim());
+                i.putExtra("Display Type", mlist.getDisty());
+                i.putExtra("Display Size", mlist.getDisz());
+                i.putExtra("CPU", mlist.getCpu());
+                i.putExtra("OS", mlist.getOs());
+                i.putExtra("Memory", mlist.getMemory());
+                i.putExtra("Camera", mlist.getCamera());
+                i.putExtra("Battery", mlist.getBattery());
+                i.putExtra("Brand", mlist.getBrand());
+                context.startActivities(new Intent[]{i});
+            }
+        });
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return mListItem.size();
+    }
+
+
+
+    public class HolderItem extends RecyclerView.ViewHolder{
+        ImageView thumbnail;
+        TextView smartphone_title,smartphone_keterangan;
+        public HolderItem(View v)
+        {
+            super(v);
+
+            thumbnail = (ImageView) v.findViewById(R.id.img_cover);
+            smartphone_title = (TextView) v.findViewById(R.id.smartphone_title);
+            smartphone_keterangan = (TextView) v.findViewById(R.id.smartphone_desc);
+
+        }
+    }
+}

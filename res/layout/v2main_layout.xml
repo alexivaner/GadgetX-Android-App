@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_empty" android:background="@color/md_white_1000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:id="@id/progressbar_middle" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:progressDrawable="@android:color/darker_gray" />
+                <TextView android:textSize="@dimen/midfontsize" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no data found" />
+                <Button android:id="@id/btnRefresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refresh" style="@style/ButtonAppTheme" />
+            </LinearLayout>
+            <include layout="@layout/lay_inc_home" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/layAuto" android:background="@drawable/bg_trans" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GridView android:id="@id/listPencarianHp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="50.0dip" android:listSelector="#00000000" android:scrollingCache="false" android:verticalSpacing="@dimen/verticalSpc" android:numColumns="1" />
+            <TextView android:textSize="10.0sp" android:textColor="@drawable/text_click" android:layout_gravity="right" android:id="@id/txtMorePencarianHp" android:background="@drawable/button_click_orange" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/SELENGKAPNYA" android:layout_below="@id/listPencarianHp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
